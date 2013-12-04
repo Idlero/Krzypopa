@@ -10,9 +10,12 @@ import java.io.Serializable;
 
 public class Dodatek implements Serializable {
 
+    @Transient
+    private static Logger logger = Logger.getLogger(Dodatek.class);
+
     @Column(name ="id_dodatku" unique = true)
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column (name = "nazwa")
@@ -33,6 +36,10 @@ public class Dodatek implements Serializable {
         this.nazwa = nazwa;
         this.opis = opis;
         this.status = status;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public int getStatus() {
