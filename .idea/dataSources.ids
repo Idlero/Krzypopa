@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.5.8" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )" uuid="19a644d8-3a98-4c61-bc96-4754d4444ee2">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/bookingsystem?useUnicode=true&amp;amp;characterEncoding=utf8</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfd8dfc5dfc5dfde</user-password>
+    <schema-pattern>bookingsystem.*</schema-pattern>
+    <default-schemas>bookingsystem.*</default-schemas>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar!/</url>
+      </library>
+    </libraries>
+    <schema name="" catalog="bookingsystem"/>
+    <table name="messages" schema="" catalog="bookingsystem" type="TABLE">
+      <column name="MESSAGE_ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="MESSAGE_TEXT" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="MESSAGE_ID"/>
+    </table>
+    <table name="person" schema="" catalog="bookingsystem" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="40" precision="0" nullable="true" jdbcType="12"/>
+      <column name="surname" sqlType="VARCHAR" length="40" precision="0" nullable="true" jdbcType="12"/>
+      <column name="birthdate" sqlType="TIMESTAMP" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="sex" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
