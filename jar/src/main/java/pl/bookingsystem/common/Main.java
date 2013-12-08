@@ -23,18 +23,18 @@ public class Main {
         Client client = new Client("Chuck", "Norris", "chuckzajebisty@gmail.com", "chucknorris");
         client = dao.save(client);
 		client = dao.selectByID(Client.class, client.getId());
-		System.out.printf("%d %s %s \n", client.getId(), client.getName(), client.getNazwisko());
+		System.out.printf("%d %s %s \n", client.getId(), client.getFirst_name(), client.getLast_name());
 
 		
 		// Update
 		System.out.println("******* UPDATE *******");
 		Client client2 = dao.selectByID(Client.class,2); // read client with id 1
-		System.out.println("Name Before Update:" + client2.getName());
-		client2.setName("James");
+		System.out.println("Name Before Update:" + client2.getFirst_name());
+		client2.setFirst_name("James");
 		dao.merge(client2);	// save the updated client details
 		
 		client2 = dao.selectByID(Client.class, 2); // read again client with id 1
-		System.out.println("Name Aftere Update:" + client2.getName());
+		System.out.println("Name Aftere Update:" + client2.getFirst_name());
 		
 		
 		// Delete
