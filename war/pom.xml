@@ -15,14 +15,14 @@
 
     <!--<url>http://bookingsystem.pl</url>-->
 
-    <build>
+<!--    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
     <dependencies>
 
@@ -35,10 +35,17 @@
         <dependency>
             <groupId>net.sourceforge.stripes</groupId>
             <artifactId>stripes</artifactId>
-            <version>1.5.5</version>
+            <version>1.5.7</version>
         </dependency>
-        <dependency>
+
+  <!--      <dependency>
             <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>

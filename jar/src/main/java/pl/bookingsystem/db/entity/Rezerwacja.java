@@ -22,11 +22,11 @@ public class Rezerwacja implements Serializable {
     @Id
     private Long id_hotelu;
 
-    @Column (name = "id_status");
+    @Column (name = "id_status")
     @Id
     private Long id_status;
 
-    @Column (name = "id_terminu");
+    @Column (name = "id_terminu")
     @Id
     private Long id_terminu;
 

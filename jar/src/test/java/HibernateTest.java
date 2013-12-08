@@ -2,42 +2,52 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import pl.bookingsystem.db.dao.PersonDAO;
-import pl.bookingsystem.db.dao.impl.PersonDAOImpl;
-import pl.bookingsystem.db.entity.Person;
-
-import java.sql.Timestamp;
+import pl.bookingsystem.db.dao.ClientDAO;
+import pl.bookingsystem.db.dao.impl.ClientDAOImpl;
+import pl.bookingsystem.db.entity.Client;
 
 
 public class HibernateTest {
 
-    PersonDAO personManager;
-    Person person;
+    private ClientDAO clientManager;
+    private Client client;
 
     @Before
     public void init() {
-        personManager = new PersonDAOImpl();
+        clientManager = new ClientDAOImpl();
+        client = new Client("Zenon", "Breszka", "zbreszka@dupa.pl", "dupablada1");
     }
 
     @Test
-    public void shouldAddNewPersonToDatabase() {
+    public void shouldAddNewClientToDatabase() {
 
         //given
-        person = new Person("XXXXX", "YYYYY", Timestamp.valueOf("2010-10-10 10:10:10"), "ZZZ");
 
         //when
-        personManager.saveNewPerson(person);
+        clientManager.save(client);
 
         //then
-        Person expected = personManager.findPersonById(person.getId());
-        Assert.assertEquals(expected.getId(), person.getId());
-        Assert.assertEquals(expected.getBirthdate(), person.getBirthdate());
+        Client expected = clientManager.selectByID(Client.class, client.getId());
+        Assert.assertEquals(expected.getId(), client.getId());
+        Assert.assertEquals(expected.getPesel(), client.getPesel());
+    }
+
+    @Test
+    public void shouldReturnClientWithIdEqualsOneFromDatabase() {
+        //given
+
+        //when
+         Client expected = clientManager.selectByID(Client.class, 1);
+
+        //then
+         Assert.assertEquals(expected.getId(), 1);
+
     }
 
     @After
-    public void deletePerson() {
-        personManager.deletePerson(person);
-        person = null;
+    public void cleanUp() {
+        clientManager.delete(client);
+        client = null;
     }
 
 }

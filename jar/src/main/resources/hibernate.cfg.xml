@@ -8,9 +8,6 @@
     <session-factory>
         <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
 
-        <!-- SQL dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bookingsystem?useUnicode=true&amp;characterEncoding=utf8</property>
@@ -20,13 +17,34 @@
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
 
-        <!-- Echo all executed SQL to stdout -->
-        <property name="show_sql">true</property>
-        <!--<property name="format_sql">true</property>-->
-        <property name="use_sql_comments">true</property>
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
-        <mapping class="pl.bookingsystem.db.entity.Message"/>
-        <mapping class="pl.bookingsystem.db.entity.Person"/>
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">false</property>
+        <!--<property name="format_sql">true</property>-->
+        <property name="use_sql_comments">false</property>
+
+        <property name="hbm2ddl.auto">validate</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+
+
+        <mapping class="pl.bookingsystem.db.entity.Client"/>
+       <!-- <mapping class="pl.bookingsystem.db.entity.Dodatek"/>
+        <mapping class="pl.bookingsystem.db.entity.Rezerwacja"/>
+        <mapping class="pl.bookingsystem.db.entity.Hotel"/>
+        <mapping class="pl.bookingsystem.db.entity.Pokoje"/>
+        <mapping class="pl.bookingsystem.db.entity.Dodatki"/>
+        <mapping class="pl.bookingsystem.db.entity.Pracownik"/>
+        <mapping class="pl.bookingsystem.db.entity.Status"/>
+        <mapping class="pl.bookingsystem.db.entity.System"/>-->
 
     </session-factory>
 </hibernate-configuration>

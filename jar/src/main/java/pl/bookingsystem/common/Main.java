@@ -1,56 +1,48 @@
 package pl.bookingsystem.common;
 
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import pl.bookingsystem.db.dao.MessageDAO;
-import pl.bookingsystem.db.dao.PersonDAO;
-import pl.bookingsystem.db.dao.impl.MessageDAOImpl;
-import pl.bookingsystem.db.dao.impl.PersonDAOImpl;
-import pl.bookingsystem.db.entity.Message;
-import pl.bookingsystem.db.entity.Person;
+import pl.bookingsystem.db.dao.ClientDAO;
+import pl.bookingsystem.db.dao.impl.ClientDAOImpl;
+import pl.bookingsystem.db.entity.Client;
 
-import java.sql.Timestamp;
 import java.util.List;
+
 
 public class Main {
 
-    private SessionFactory sessionFactory = null;
+	public static void main(String[] args) {
+        ClientDAO dao = new ClientDAOImpl();
+		
+		// Read
+		System.out.println("******* READ *******");
+		List clients = dao.selectAll(Client.class);
+		System.out.println("Total Clients: " + clients.size());
+		
+		
+		// Write
+		System.out.println("******* WRITE *******");
+        Client client = new Client("Chuck", "Norris", "chuckzajebisty@gmail.com", "chucknorris");
+        client = dao.save(client);
+		client = dao.selectByID(Client.class, client.getId());
+		System.out.printf("%d %s %s \n", client.getId(), client.getName(), client.getNazwisko());
 
-    public Main() {
-        sessionFactory = new Configuration().configure().buildSessionFactory();
-    }
-
-    private void run() {
-
-        PersonDAO personManager = new PersonDAOImpl();
-
-        Person wanted = personManager.findByPersonName("Steven", "Seagal");
-        System.out.println(wanted);
-
-        System.out.println(personManager.findPersonById((long) 1079));
-        Person chuck = new Person("Chuck", "Norris", Timestamp.valueOf("2013-10-10 10:10:10"), "Male");
-        personManager.saveNewPerson(chuck);
-        personManager.printAllPersonsTo(System.out);
-        //personManager.deletePerson(chuck);
-
-        List allPersons = personManager.loadAllPersons();
-
-
-        for (Object person : allPersons) {
-            System.out.println(person);
-        }
-
-        MessageDAO messageDao = new MessageDAOImpl();
-
-        System.out.println("Wprowadz 1 wiadomosc: ");
-        String message = messageDao.readMessageFrom(System.in);
-        messageDao.putMessage(new Message(message));
-
-
-        messageDao.readMessagesTo(System.out);
-    }
-
-    public static void main(String[] args) {
-        new Main().run();
-    }
+		
+		// Update
+		System.out.println("******* UPDATE *******");
+		Client client2 = dao.selectByID(Client.class,2); // read client with id 1
+		System.out.println("Name Before Update:" + client2.getName());
+		client2.setName("James");
+		dao.merge(client2);	// save the updated client details
+		
+		client2 = dao.selectByID(Client.class, 2); // read again client with id 1
+		System.out.println("Name Aftere Update:" + client2.getName());
+		
+		
+		// Delete
+		System.out.println("******* DELETE *******");
+        Client client3 = dao.selectByID(Client.class, client.getId());
+        System.out.println("Object:" + client3);
+		dao.delete(client);
+		client3 = dao.selectByID(Client.class, client.getId());
+		System.out.println("Object:" + client3);
+	}
 }

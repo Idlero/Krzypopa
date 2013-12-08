@@ -7,17 +7,19 @@ import java.util.List;
 
 public interface GenericDAO<T, ID extends Serializable> {
 
-    public void save(T entity);
+    T save(T entity);      //save or update
 
-    public void merge(T entity);
+    T merge(T entity);
 
-    public void delete(T entity);
+    void delete(T entity);
 
-    public List<T> findMany(Query query);
+    List selectAll(Class clazz);   //select * from clazz
 
-    public T findOne(Query query);
+    List<T> selectMany(Query query);
 
-    public List findAll(Class clazz);
+    T selectOne(Query query);
 
-    public T findByID(Class clazz, ID id);
+    T selectByID(Class clazz, ID id);
+
+
 }

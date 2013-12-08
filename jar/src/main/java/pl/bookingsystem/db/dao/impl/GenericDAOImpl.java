@@ -2,7 +2,9 @@ package pl.bookingsystem.db.dao.impl;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import pl.bookingsystem.db.dao.GenericDAO;
+import pl.bookingsystem.db.entity.Client;
 import pl.bookingsystem.db.utils.HibernateUtil;
 
 import java.io.Serializable;
@@ -13,47 +15,90 @@ import java.util.List;
  */
 public abstract class GenericDAOImpl<T, ID extends Serializable> implements GenericDAO<T, ID> {
 
-    protected Session getSession() {
-        return HibernateUtil.getSession();
+    @Override
+    public T save(T entity) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+
+        session.beginTransaction();
+
+        session.saveOrUpdate(entity);
+
+        session.getTransaction().commit();
+
+        session.close();
+
+        return entity;
     }
 
-    public void save(T entity) {
-        Session hibernateSession = this.getSession();
-        hibernateSession.saveOrUpdate(entity);
+    @Override
+    public T merge(T entity) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+
+        session.beginTransaction();
+
+        session.merge(entity);
+
+        session.getTransaction().commit();
+
+        session.close();
+        return entity;
     }
 
-    public void merge(T entity) {
-        Session hibernateSession = this.getSession();
-        hibernateSession.merge(entity);
-    }
-
+    @Override
     public void delete(T entity) {
-        Session hibernateSession = this.getSession();
-        hibernateSession.delete(entity);
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+
+        session.beginTransaction();
+
+        session.delete(entity);
+
+        session.getTransaction().commit();
+
+        session.close();
     }
 
-    public List<T> findMany(Query query) {
-        List<T> t;
-        t = (List<T>) query.list();
+    @Override
+    public List selectAll(Class clazz) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+        List<? extends Object> list = null;
+        Query query = session.createQuery("from " + clazz.getName());
+        list = query.list();
+        session.close();
+        return list;
+    }
+
+    @Override
+    public List<T> selectMany(Query query) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+
+        List<T> t = (List<T>) query.list();
+        session.close();
         return t;
     }
 
-    public T findOne(Query query) {
-        T t;
-        t = (T) query.uniqueResult();
+    @Override
+    public T selectOne(Query query) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+
+        T t = (T) query.uniqueResult();
+
+        session.close();
         return t;
     }
 
-    public T findByID(Class clazz, ID id) {
-        Session hibernateSession = this.getSession();
-        return (T) hibernateSession.get(clazz, id);
-    }
+    @Override
+    public T selectByID(Class clazz, ID id) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
 
-    public List findAll(Class clazz) {
-        Session hibernateSession = this.getSession();
-        List<? extends Object> T = null;
-        Query query = hibernateSession.createQuery("from " + clazz.getName());
-        T = query.list();
-        return T;
+        T t = (T) session.get(clazz, id);
+        session.close();
+        return t;
     }
 }

@@ -13,7 +13,7 @@ public class Dodatek implements Serializable {
     @Transient
     private static Logger logger = Logger.getLogger(Dodatek.class);
 
-    @Column(name ="id_dodatku" unique = true)
+    @Column(name ="id_dodatku", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

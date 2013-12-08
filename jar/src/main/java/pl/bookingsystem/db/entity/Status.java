@@ -11,7 +11,7 @@ public class Status implements Serializable {
     @Transient
     private static Logger logger = Logger.getLogger(Status.class);
 
-    @Column (name = "id_statusu", unique = true)
+    @Column(name = "id_statusu", unique = true)
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
@@ -29,6 +29,9 @@ public class Status implements Serializable {
         this.nazwa = nazwa;
         this.opis = opis;
         this.kolor = kolor;
+    }
+
+    public Status() {
     }
 
     public Long getId() {
