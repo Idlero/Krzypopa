@@ -38,7 +38,7 @@ public class Client implements Serializable
     private String email;
   
     @Column (name = "phone",nullable = true)
-    private Integer   phone;
+    private Integer phone;
 
     @Column (name = "password")
     private String password;
@@ -105,11 +105,11 @@ public class Client implements Serializable
         this.email = email;
     }
 
-    public Integer get  phone() {
-        return   phone;
+    public Integer getphone() {
+        return phone;
     }
 
-    public void set  phone(Integer   phone) {
+    public void setphone(Integer   phone) {
         this.  phone =   phone;
     }
 

@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\Dodatki.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BookingSystem.iml" afterPath="$PROJECT_DIR$/BookingSystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Hotel.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Hotel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Status.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Status.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/jar/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/jar.iml" afterPath="$PROJECT_DIR$/jar/jar.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/war.iml" afterPath="$PROJECT_DIR$/war/war.iml" />
-      <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\Dodatek.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java" />
-      <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\Pokoje.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java" />
-      <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\Pracownik.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Employee.java" />
-      <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\Rezerwacja.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java" />
-    </list>
+    <list default="true" id="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" name="Default" comment="" />
     <ignored path="BookingSystem.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/db/entity/Person.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385750071844" ignored="false" />
@@ -132,98 +118,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Reservation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="31" selection-start="614" selection-end="614" vertical-scroll-proportion="-8.333333">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rooms.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="33" selection-start="1763" selection-end="1763" vertical-scroll-proportion="1.2630435">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hotel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Hotel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="-6.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Employee.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="30" selection-start="491" selection-end="491" vertical-scroll-proportion="1.882353">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Status.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Status.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="-5.6666665">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="System.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="31" selection-start="320" selection-end="320" vertical-scroll-proportion="-3.7843137">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdditionRooms.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="34" selection-start="544" selection-end="544" vertical-scroll-proportion="-6.7843137">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Addition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="38" selection-start="1162" selection-end="1162" vertical-scroll-proportion="-12.039216">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Client.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="34" selection-start="1596" selection-end="1596" vertical-scroll-proportion="-24.0">
+            <state line="40" column="20" selection-start="892" selection-end="892" vertical-scroll-proportion="0.28024194">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1008,7 +906,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1121,34 +1019,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="371" selection-end="371" vertical-scroll-proportion="0.017507724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.15756951">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.119959675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="146" selection-end="146" vertical-scroll-proportion="0.119959675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/create_database_and_table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="20" selection-start="582" selection-end="582" vertical-scroll-proportion="0.32560483">
@@ -1183,27 +1053,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="34" selection-start="544" selection-end="544" vertical-scroll-proportion="-6.7843137">
+        <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0700309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="320" selection-end="320" vertical-scroll-proportion="0.20978262">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="38" selection-start="1162" selection-end="1162" vertical-scroll-proportion="-12.039216">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="17" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0700309">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="34" selection-start="1596" selection-end="1596" vertical-scroll-proportion="-24.0">
+        <state line="89" column="33" selection-start="1763" selection-end="1763" vertical-scroll-proportion="1.2630435">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1212,25 +1087,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="614" selection-end="614" vertical-scroll-proportion="-8.333333">
+        <state line="27" column="31" selection-start="614" selection-end="614" vertical-scroll-proportion="0.4516472">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="320" selection-end="320" vertical-scroll-proportion="-3.7843137">
+        <state line="9" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.06854839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="371" selection-end="371" vertical-scroll-proportion="0.017137097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="34" selection-start="544" selection-end="544" vertical-scroll-proportion="0.36769393">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="33" selection-start="1763" selection-end="1763" vertical-scroll-proportion="1.2630435">
+        <state line="57" column="38" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.67481405">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="20" selection-start="892" selection-end="892" vertical-scroll-proportion="0.28024194">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
