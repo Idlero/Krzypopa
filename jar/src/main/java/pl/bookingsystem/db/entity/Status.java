@@ -11,24 +11,24 @@ public class Status implements Serializable {
     @Transient
     private static Logger logger = Logger.getLogger(Status.class);
 
-    @Column(name = "id_statusu", unique = true)
+    @Column(name = "id_status", unique = true)
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name ="nazwa")
-    private String nazwa;
+    @Column (name ="name")
+    private String name;
 
-    @Column (name = "opis")
-    private String opis;
+    @Column (name = "description")
+    private String description;
 
-    @Column (name = "kolor", unique = true)
-    private Integer kolor;
+    @Column (name = "color", unique = true)
+    private Integer color;
 
-    public Status(String nazwa, String opis, Integer kolor) {
-        this.nazwa = nazwa;
-        this.opis = opis;
-        this.kolor = kolor;
+    public Status(String name, String description, Integer color) {
+        this.name = name;
+        this.description = description;
+        this.color = color;    
     }
 
     public Status() {
@@ -38,27 +38,27 @@ public class Status implements Serializable {
         return id;
     }
 
-    public String getNazwa() {
-        return nazwa;
+    public String getName() {
+        return name;
     }
 
-    public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getOpis() {
-        return opis;
+    public String getDescription() {
+        return description;
     }
 
-    public void setOpis(String opis) {
-        this.opis = opis;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public Integer getKolor() {
-        return kolor;
+    public Integer getColor() {
+        return color;
     }
 
-    public void setKolor(Integer kolor) {
-        this.kolor = kolor;
+    public void setColor(Integer color) {
+        this.color = color;
     }
 }

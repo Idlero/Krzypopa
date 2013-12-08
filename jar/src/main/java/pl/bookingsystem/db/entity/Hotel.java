@@ -12,42 +12,42 @@ public class Hotel implements Serializable {
     @Transient
     private static Logger logger = Logger.getLogger(Hotel.class);
 
-    @Column (name = "id_hotelu", unique = true)
+    @Column (name = "id_hotel", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "nazwa")
-    private String nazwa;
+    @Column (name = "name")
+    private String name;
 
-    @Column (name = "adres")
-    private String adres;
+    @Column (name = "address")
+    private String address;
 
     public Hotel() {
     }
 
-    public Hotel(String nazwa, String adres) {
-        this.nazwa = nazwa;
-        this.adres = adres;
+    public Hotel(String name, String address) {
+        this.name = name;
+        this.address = address;
     }
 
     public Long getId() {
         return id;
     }
 
-    public String getNazwa() {
-        return nazwa;
+    public String getName() {
+        return name;
     }
 
-    public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getAdres() {
-        return adres;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdres(String adres) {
-        this.adres = adres;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

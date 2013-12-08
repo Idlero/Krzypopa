@@ -11,41 +11,41 @@ public class System implements Serializable {
     @Transient
     private static Logger logger = Logger.getLogger(System.class);
 
-    @Column (name = "id_systsemu", unique = true)
+    @Column (name = "id_systsem", unique = true)
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "id_rezerwacji")
+    @Column (name = "id_reservation")
     @Id
-    private Long id_rezerwacji;
+    private Long id_reservation;
 
-    @Column (name = "id_clienta")
+    @Column (name = "id_client")
     @Id
-    private Long id_clienta;
+    private Long id_client;
 
-    public System(Long id_clienta, Long id_rezerwacji) {
-        this.id_clienta = id_clienta;
-        this.id_rezerwacji = id_rezerwacji;
+    public System(Long id_client, Long id_reservation) {
+        this.id_client = id_client;
+        this.id_reservation = id_reservation;                           
     }
 
     public Long getId() {
         return id;
     }
 
-    public Long getId_clienta() {
-        return id_clienta;
+    public Long getId_client() {
+        return id_client;
     }
 
-    public void setId_clienta(Long id_clienta) {
-        this.id_clienta = id_clienta;
+    public void setId_client(Long id_client) {
+        this.id_client = id_client;
     }
 
-    public Long getId_rezerwacji() {
-        return id_rezerwacji;
+    public Long getId_reservation() {
+        return id_reservation;
     }
 
-    public void setId_rezerwacji(Long id_rezerwacji) {
-        this.id_rezerwacji = id_rezerwacji;
+    public void setId_reservation(Long id_reservation) {
+        this.id_reservation = id_reservation;
     }
 }

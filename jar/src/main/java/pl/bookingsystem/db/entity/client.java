@@ -14,19 +14,19 @@ public class Client implements Serializable
     @Transient
     private static Logger logger = Logger.getLogger(Client.class);
 
-    @Column (name = "id_clienta", unique = true)
+    @Column (name = "id_client", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column (name  = "imie")
-    private String name;
+    @Column (name  = "first_name")
+    private String first_name;
 
-    @Column (name = "nazwisko")
-    private String nazwisko;
+    @Column (name = "last_name")
+    private String last_name;
 
-    @Column (name = "adres",nullable = true)
-    private String adres;
+    @Column (name = "address",nullable = true)
+    private String address;
 
     @Column (name = "PESEL",nullable = true)
     private Integer pesel;
@@ -36,16 +36,16 @@ public class Client implements Serializable
 
     @Column (name = "email")
     private String email;
+  
+    @Column (name = "phone",nullable = true)
+    private Integer   phone;
 
-    @Column (name = "telefon",nullable = true)
-    private Integer tel;
-
-    @Column (name = "haslo")
+    @Column (name = "password")
     private String password;
 
-    public Client(String name, String nazwisko, String email, String password) {
-        this.name = name;
-        this.nazwisko = nazwisko;
+    public Client(String first_name, String last_name, String email, String password) {
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.email = email;
         this.password = password;
     }
@@ -57,28 +57,28 @@ public class Client implements Serializable
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirst_name() {
+        return first_name;
+    }
+    
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public String getNazwisko() {
-        return nazwisko;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
-    public void setNazwisko(String nazwisko) {
-        this.nazwisko = nazwisko;
+    public String getAddress() {
+        return address;
     }
 
-    public String getAdres() {
-        return adres;
-    }
-
-    public void setAdres(String adres) {
-        this.adres = adres;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Integer getPesel() {
@@ -105,12 +105,12 @@ public class Client implements Serializable
         this.email = email;
     }
 
-    public Integer getTel() {
-        return tel;
+    public Integer get  phone() {
+        return   phone;
     }
 
-    public void setTel(Integer tel) {
-        this.tel = tel;
+    public void set  phone(Integer   phone) {
+        this.  phone =   phone;
     }
 
     public String getPassword() {

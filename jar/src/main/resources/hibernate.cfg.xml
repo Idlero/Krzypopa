@@ -37,12 +37,12 @@
 
 
         <mapping class="pl.bookingsystem.db.entity.Client"/>
-       <!-- <mapping class="pl.bookingsystem.db.entity.Dodatek"/>
-        <mapping class="pl.bookingsystem.db.entity.Rezerwacja"/>
+       <!-- <mapping class="pl.bookingsystem.db.entity.Additionn"/>
+        <mapping class="pl.bookingsystem.db.entity.Reservationn"/>
         <mapping class="pl.bookingsystem.db.entity.Hotel"/>
-        <mapping class="pl.bookingsystem.db.entity.Pokoje"/>
-        <mapping class="pl.bookingsystem.db.entity.Dodatki"/>
-        <mapping class="pl.bookingsystem.db.entity.Pracownik"/>
+        <mapping class="pl.bookingsystem.db.entity.Rooms/>
+        <mapping class="pl.bookingsystem.db.entity.Additionn"/>
+        <mapping class="pl.bookingsystem.db.entity.Employee/>
         <mapping class="pl.bookingsystem.db.entity.Status"/>
         <mapping class="pl.bookingsystem.db.entity.System"/>-->
 
