@@ -7,6 +7,7 @@
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://localhost:3306/bookingsystem?useUnicode=true&amp;amp;characterEncoding=utf8</jdbc-url>
     <user-name>root</user-name>
+    <user-password>dfd8dfc5dfc5dfde</user-password>
     <schema-pattern>bookingsystem.*</schema-pattern>
     <default-schemas>bookingsystem.*</default-schemas>
     <libraries>
@@ -29,8 +30,8 @@
       <column name="id_room" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="id_addition" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id_ar"/>
-      <foreign-key name="FKAddition_rooms927824" columns="id_addition" ref-table="addition" ref-schema="" ref-catalog="bookingsystem" ref-columns="id_addition" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="FKAddition_rooms401349" columns="id_room" ref-table="room" ref-schema="" ref-catalog="bookingsystem" ref-columns="id_room" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKAddition_rooms927824" columns="id_addition" ref-table="addition" ref-schema="" ref-catalog="bookingsystem" ref-columns="id_addition" update-rule="3" delete-rule="3" deferrability="2"/>
       <index name="id_ar" unique="true" columns="id_ar"/>
     </table>
     <table name="client" schema="" catalog="bookingsystem" type="TABLE">

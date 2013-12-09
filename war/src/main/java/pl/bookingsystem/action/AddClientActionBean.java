@@ -53,7 +53,7 @@ public class AddClientActionBean implements ActionBean {
 
     @HandlesEvent("edit")
     public Resolution edit() {
-        client = clientDAO.findByClientName(client.getName(), client.getNazwisko());
+        client = clientDAO.findByClientName(client.getFirst_name(), client.getLast_name());
         return new ForwardResolution("WEB-INF/pages/addClient.jsp");
     }
 

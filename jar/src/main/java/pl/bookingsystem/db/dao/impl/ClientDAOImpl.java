@@ -14,11 +14,11 @@ public class ClientDAOImpl extends GenericDAOImpl<Client, Integer> implements Cl
     public Client findByClientName(String name, String surname) {
         Client client = null;
         try {
-            String sql = "SELECT p FROM Client p WHERE p.name = :name AND p.nazwisko = :nazwisko";
+            String sql = "SELECT p FROM Client p WHERE p.first_name = :first_name AND p.last_name = :last_name";
             Session session = HibernateUtil.getSessionFactory().openSession();
 
             Query query = session.createQuery(sql);
-            query.setParameter("name", name).setParameter("nazwisko", surname);
+            query.setParameter("first_name", name).setParameter("last_name", surname);
 
             client = selectOne(query);
 
@@ -30,5 +30,7 @@ public class ClientDAOImpl extends GenericDAOImpl<Client, Integer> implements Cl
         }
         return client;
     }
+
+
 
 }
