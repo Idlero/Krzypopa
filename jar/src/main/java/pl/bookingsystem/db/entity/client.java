@@ -6,6 +6,8 @@ import org.apache.log4j.Logger;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigInteger;
+
 @Entity
 @Table(name= "client" )
 public class Client implements Serializable
@@ -17,7 +19,8 @@ public class Client implements Serializable
     @Column (name = "id_client", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
+
 
     @Column (name  = "first_name")
     private String first_name;
@@ -53,7 +56,7 @@ public class Client implements Serializable
     public Client() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -121,7 +124,7 @@ public class Client implements Serializable
         this.password = password;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }
