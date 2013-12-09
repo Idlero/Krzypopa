@@ -21,6 +21,8 @@ public class Main {
 		// Write
 		System.out.println("******* WRITE *******");
         Client client = new Client("Chuck", "Norris", "chuckzajebisty@gmail.com", "chucknorris");
+        Client someone = new Client("Zenek","Breszka", "ul.Podmiejska", 910728012, 1231231231,"zenk@breszka.com", 500600500, "Acocieto1");
+        dao.save(someone);
         client = dao.save(client);
 		client = dao.selectByID(Client.class, client.getId());
 		System.out.printf("%d %s %s \n", client.getId(), client.getFirst_name(), client.getLast_name());
@@ -28,12 +30,12 @@ public class Main {
 		
 		// Update
 		System.out.println("******* UPDATE *******");
-		Client client2 = dao.selectByID(Client.class,2); // read client with id 1
+		Client client2 = dao.selectByID(Client.class,1); // read client with id 1
 		System.out.println("Name Before Update:" + client2.getFirst_name());
 		client2.setFirst_name("James");
 		dao.merge(client2);	// save the updated client details
 		
-		client2 = dao.selectByID(Client.class, 2); // read again client with id 1
+		client2 = dao.selectByID(Client.class,1); // read again client with id 1
 		System.out.println("Name Aftere Update:" + client2.getFirst_name());
 		
 		

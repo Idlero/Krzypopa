@@ -2,128 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" name="Default" comment="">
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\common\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\dao\ClientDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\dao\GenericDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\dao\impl\ClientDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\dao\impl\GenericDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Addition.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\AdditionRooms.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Client.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Employee.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Hotel.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Reservation.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Rooms.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\Status.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\entity\System.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\classes\pl\bookingsystem\db\utils\HibernateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\jar-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\surefire-reports\HibernateTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\surefire-reports\TEST-HibernateTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\jar\target\test-classes\HibernateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\classes\StripesResources.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\classes\commons-logging.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\classes\pl\bookingsystem\action\AddClientActionBean.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\classes\pl\bookingsystem\action\CalculatorActionBean.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\classes\pl\bookingsystem\action\ListClientsActionBean.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\antlr-2.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\asm-1.5.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\asm-attrs-1.5.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\cglib-2.1_3.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\commons-collections-2.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\commons-logging-1.1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\ehcache-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\ejb3-persistence-1.0.1.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\hibernate-3.2.6.ga.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\hibernate-annotations-3.3.1.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\hibernate-commons-annotations-3.0.0.ga.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\jar-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\jta-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\mysql-connector-java-5.1.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\lib\stripes-1.5.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\pages\addClient.jsp" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\pages\index.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\pages\listClients.jsp" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\css\sb-admin.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\core.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\icons.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\larger.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\list.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\path.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\spinning.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\less\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_spinning.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\font-awesome\scss\font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\flot\chart-data-flot.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\flot\excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\flot\jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\flot\jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\flot\jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\flot\jquery.flot.tooltip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\morris\chart-data-morris.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\tablesorter\jquery.tablesorter.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\js\tablesorter\tables.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\blank-page.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\bootstrap-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\bootstrap-grid.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\charts.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\forms.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\tables.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\admin_panel\pages\typography.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\client_panel\css\sb-client.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\common\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\common\js\bootstrap\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\common\js\jquery\jquery-1.10.2.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\bookingsystem-1.0-SNAPSHOT\modules\login_panel\index.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\classes\StripesResources.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\classes\commons-logging.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\classes\pl\bookingsystem\action\AddClientActionBean.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\classes\pl\bookingsystem\action\CalculatorActionBean.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\classes\pl\bookingsystem\action\ListClientsActionBean.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\Doc\GitHub\BookingSystem\war\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/blank-page.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/blank-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-grid.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/charts.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/charts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/forms.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" afterPath="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/war/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/typography.html" afterPath="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/typography.html" />
+      <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\client.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java" />
     </list>
     <ignored path="BookingSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -142,7 +24,7 @@
     <file path="/addMessage.jsp" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385920739870" ignored="false" />
     <file path="/listMessages.jsp" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386011186944" ignored="false" />
     <file path="/BookingSystem Data Source" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385932777427" ignored="false" />
-    <file path="/Main.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386543584193" ignored="false" />
+    <file path="/Main.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386618407789" ignored="false" />
     <file path="/GenericDAOImpl.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385932981410" ignored="false" />
     <file path="/MessagesActionBean.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386007035999" ignored="false" />
     <file path="/index.jsp" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386616651369" ignored="false" />
@@ -229,115 +111,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
+      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="153" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="49" selection-start="1594" selection-end="1594" vertical-scroll-proportion="-15.038462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blank-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/blank-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="6489" selection-end="6489" vertical-scroll-proportion="-2.2857144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap-elements.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="6519" selection-end="6519" vertical-scroll-proportion="0.33333334">
+            <state line="55" column="146" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#2;n#div#0;n#div#2;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-grid.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-grid.html">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="6507" selection-end="6507" vertical-scroll-proportion="-24.948051">
+            <state line="39" column="36" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="charts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/charts.html">
+      <file leaf-file-name="addClient.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/addClient.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="46" selection-start="6597" selection-end="6597" vertical-scroll-proportion="-26.948051">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/forms.html">
+      <file leaf-file-name="listClients.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/listClients.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="6481" selection-end="6481" vertical-scroll-proportion="-26.935064">
+            <state line="13" column="49" selection-start="660" selection-end="660" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tables.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html">
+      <file leaf-file-name="AddClientActionBean.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="392" column="35" selection-start="15900" selection-end="15900" vertical-scroll-proportion="-79.92208">
+            <state line="64" column="44" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.5226537">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="typography.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/typography.html">
+      <file leaf-file-name="ListClientsActionBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/ListClientsActionBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="6491" selection-end="6491" vertical-scroll-proportion="-26.935064">
+            <state line="10" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/common/css/bootstrap.css">
+      <file leaf-file-name="CalculatorActionBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/CalculatorActionBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="48" column="25" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -362,14 +224,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java" />
-        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" />
-        <option value="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" />
         <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java" />
         <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java" />
         <option value="dbtable:/4c521ebc/19a644d8-3a98-4c61-bc96-4754d4444ee2/bookingsystem..addition" />
-        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java" />
         <option value="$PROJECT_DIR$/jar/src/test/java/HibernateTest.java" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-grid.html" />
         <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/blank-page.html" />
         <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html" />
@@ -377,6 +235,10 @@
         <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html" />
         <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/forms.html" />
         <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/charts.html" />
+        <option value="$PROJECT_DIR$/war/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" />
+        <option value="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" />
       </list>
     </option>
   </component>
@@ -603,151 +465,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_panel" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_panel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -802,6 +524,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -813,7 +539,195 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1238,91 +1152,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="51" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/test/java/HibernateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="10" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="153" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="49" selection-start="1594" selection-end="1594" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/common/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/blank-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="6489" selection-end="6489" vertical-scroll-proportion="-2.2857144">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="6491" selection-end="6491" vertical-scroll-proportion="-26.935064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="392" column="35" selection-start="15900" selection-end="15900" vertical-scroll-proportion="-79.92208">
@@ -1353,7 +1182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="6519" selection-end="6519" vertical-scroll-proportion="0.33333334">
+        <state line="125" column="46" selection-start="6519" selection-end="6519" vertical-scroll-proportion="-2.2857144">
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1379,6 +1208,87 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="47" selection-start="7024" selection-end="7024" vertical-scroll-proportion="-1.987013">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="36" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="146" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/addClient.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/listClients.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="49" selection-start="660" selection-end="660" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/ListClientsActionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/CalculatorActionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="25" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="44" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.5226537">
+          <folding />
         </state>
       </provider>
     </entry>
