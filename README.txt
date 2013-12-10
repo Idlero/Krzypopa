@@ -1,1 +1,0 @@
-Porosty projekt na studia

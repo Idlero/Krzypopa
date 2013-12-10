@@ -1,7 +1,0 @@
-BookingSystem
-=============
-
-prosty system rezerwacji
-
-
-
