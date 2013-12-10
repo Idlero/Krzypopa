@@ -7,7 +7,7 @@ import pl.bookingsystem.db.dao.ClientDAO;
 import pl.bookingsystem.db.entity.Client;
 import pl.bookingsystem.db.utils.HibernateUtil;
 
-public class ClientDAOImpl extends GenericDAOImpl<Client, Integer> implements ClientDAO {
+public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements ClientDAO{
 
     private static Logger logger = Logger.getLogger(ClientDAOImpl.class);
 

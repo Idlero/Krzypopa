@@ -11,7 +11,7 @@ public class System implements Serializable {
     @Transient
     private static Logger logger = Logger.getLogger(System.class);
 
-    @Column (name = "id_systsem", unique = true)
+    @Column (name = "id_system", unique = true)
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;

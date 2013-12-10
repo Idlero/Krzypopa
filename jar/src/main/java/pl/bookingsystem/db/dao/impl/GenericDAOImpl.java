@@ -4,7 +4,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import pl.bookingsystem.db.dao.GenericDAO;
-import pl.bookingsystem.db.entity.Client;
 import pl.bookingsystem.db.utils.HibernateUtil;
 
 import java.io.Serializable;

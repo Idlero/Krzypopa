@@ -30,9 +30,9 @@ public class Employee implements Serializable{
     private Long id_hotel;
 
     @Column (name = "status")
-    private Integer status;
+    private Long status;
 
-    public Employee(String first_name, String last_name, Long id_hotel, Integer status) {
+    public Employee(String first_name, String last_name, Long id_hotel, Long status) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.id_hotel = id_hotel;
@@ -67,11 +67,11 @@ public class Employee implements Serializable{
         this.id_hotel = id_hotel;
     }
 
-    public Integer getStatus() {
+    public Long getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(Long status) {
         this.status = status;
     }
 }

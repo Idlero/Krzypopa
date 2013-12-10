@@ -25,13 +25,13 @@ public class Addition implements Serializable {
     private String description;
 
     @Column (name = "satatus")
-    private int status;
+    private Long status;
     
     public Addition(){
 
     }
 
-    public Addition(String name, String description, int status) {
+    public Addition(String name, String description, Long status) {
 
         this.name = name;
         this.description = description;
@@ -42,11 +42,11 @@ public class Addition implements Serializable {
         return id;
     }
 
-    public int getStatus() {
+    public Long getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Long status) {
         this.status = status;
     }
 

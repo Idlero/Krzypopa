@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="830549370">
+  <component name="DataSourceManagerImpl" format="xml" hash="3892095558">
     <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.6.15-log" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )" uuid="19a644d8-3a98-4c61-bc96-4754d4444ee2">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/bookingsystem?useUnicode=true&amp;amp;characterEncoding=utf8</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/bookingsystem2?useUnicode=true&amp;amp;characterEncoding=utf8</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
       <schema-pattern>bookingsystem.*</schema-pattern>
