@@ -8,20 +8,12 @@ import pl.bookingsystem.db.entity.Client;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListClientsActionBean extends ClientDAOImpl implements ActionBean {
+@UrlBinding("/list")
+public class ListClientsActionBean extends BaseActionBean {
 
     public List<Client> clients = new ArrayList<Client>();
 
     private ClientDAO clientDAO = new ClientDAOImpl();
-    private ActionBeanContext context;
-
-    public ActionBeanContext getContext() {
-        return context;
-    }
-
-    public void setContext(ActionBeanContext context) {
-        this.context = context;
-    }
 
     @DefaultHandler
     public Resolution getListClients() {

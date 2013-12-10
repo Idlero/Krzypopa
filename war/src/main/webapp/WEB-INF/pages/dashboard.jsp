@@ -33,13 +33,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.jsp">SB Admin</a>
+        <a class="navbar-brand" href="../../index.jsp">SB Admin</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a href="../../index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="modules/admin_panel/pages/charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
             <li><a href="modules/admin_panel/pages/tables.html"><i class="fa fa-table"></i> Tables</a></li>
             <li><a href="modules/admin_panel/pages/forms.html"><i class="fa fa-edit"></i> Forms</a></li>
@@ -127,7 +127,7 @@
     <div class="col-lg-12">
 
         <h1>Dashboard <small>Statistics Overview</small></h1>
-        <div><jsp:include page="WEB-INF/pages/listClients.jsp" /></div>
+        <div><jsp:include page="listClients.jsp" /></div>
         <ol class="breadcrumb">
             <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
         </ol>

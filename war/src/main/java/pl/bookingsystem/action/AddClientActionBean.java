@@ -9,7 +9,7 @@ import pl.bookingsystem.db.entity.Client;
 import java.util.List;
 
 @UrlBinding("/add")
-public class AddClientActionBean implements ActionBean {
+public class AddClientActionBean extends BaseActionBean{
 
     private static final String SAVE_EVENT = "save";
 

@@ -23,10 +23,10 @@ public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements Clien
             client = selectOne(query);
 
         } catch (NonUniqueResultException ex) {
-            logger.error("FIND Client: " + ex.getMessage());
+            logger.error("FIND Client.java: " + ex.getMessage());
             System.out.println("Query returned more than one results.");
         } catch (HibernateException ex) {
-            logger.error("FIND Client: " + ex.getMessage());
+            logger.error("FIND Client.java: " + ex.getMessage());
         }
         return client;
     }
