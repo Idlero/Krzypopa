@@ -6,7 +6,6 @@ import org.apache.log4j.Logger;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.math.BigInteger;
 
 @Entity
 @Table(name= "client" )
@@ -19,7 +18,7 @@ public class Client implements Serializable
     @Column (name = "id_client", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
 
 
     @Column (name  = "first_name")
@@ -32,16 +31,16 @@ public class Client implements Serializable
     private String address;
 
     @Column (name = "PESEL",nullable = true)
-    private Integer pesel;
+    private Long pesel;
 
     @Column (name = "NIP",nullable = true)
-    private Integer nip;
+    private Long nip;
 
     @Column (name = "email")
     private String email;
   
     @Column (name = "phone",nullable = true)
-    private Integer phone;
+    private Long phone;
 
     @Column (name = "password")
     private String password;
@@ -53,7 +52,7 @@ public class Client implements Serializable
         this.password = password;
     }
 
-    public Client(String last_name, String first_name, String address, Integer pesel, Integer nip, String email, Integer phone, String password) {
+    public Client(String last_name, String first_name, String address, Long pesel, Long nip, String email, Long phone, String password) {
         this.last_name = last_name;
         this.first_name = first_name;
         this.address = address;
@@ -67,7 +66,7 @@ public class Client implements Serializable
     public Client() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
@@ -95,19 +94,19 @@ public class Client implements Serializable
         this.address = address;
     }
 
-    public Integer getPesel() {
+    public Long getPesel() {
         return pesel;
     }
 
-    public void setPesel(Integer pesel) {
+    public void setPesel(Long pesel) {
         this.pesel = pesel;
     }
 
-    public Integer getNip() {
+    public Long getNip() {
         return nip;
     }
 
-    public void setNip(Integer nip) {
+    public void setNip(Long nip) {
         this.nip = nip;
     }
 
@@ -119,11 +118,11 @@ public class Client implements Serializable
         this.email = email;
     }
 
-    public Integer getphone() {
+    public Long getphone() {
         return phone;
     }
 
-    public void setphone(Integer   phone) {
+    public void setphone(Long   phone) {
         this.  phone =   phone;
     }
 
@@ -135,7 +134,7 @@ public class Client implements Serializable
         this.password = password;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 }

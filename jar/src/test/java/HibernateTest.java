@@ -27,7 +27,8 @@ public class HibernateTest {
         clientManager.save(client);
 
         //then
-        Client expected = clientManager.selectByID(Client.class, client.getId());
+
+        Client expected = clientManager.selectByID(Client.class,  client.getId());
         Assert.assertEquals(expected.getId(), client.getId());
         Assert.assertEquals(expected.getPesel(), client.getPesel());
     }
@@ -37,7 +38,7 @@ public class HibernateTest {
         //given
 
         //when
-         Client expected = clientManager.selectByID(Client.class, 1);
+         Client expected = clientManager.selectByID(Client.class, (long) 1);
 
         //then
         // Assert.assertEquals(expected.getId(), 1);

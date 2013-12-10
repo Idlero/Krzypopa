@@ -30,9 +30,9 @@ public class Reservation implements Serializable {
     private Long id_dates;
 
     @Column (name = "price")
-    private Integer price;
+    private Long price;
 
-    public Reservation(Long id_hotel, Long id_status, Long id_dates, Integer price) {
+    public Reservation(Long id_hotel, Long id_status, Long id_dates, Long price) {
         this.id_hotel = id_hotel;
         this.id_status = id_status;
         this.id_dates = id_dates;
@@ -67,11 +67,11 @@ public class Reservation implements Serializable {
         this.id_dates = id_dates;
     }
 
-    public Integer getPrice() {
+    public Long getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 }

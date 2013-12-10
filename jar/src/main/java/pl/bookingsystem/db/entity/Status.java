@@ -23,9 +23,9 @@ public class Status implements Serializable {
     private String description;
 
     @Column (name = "color", unique = true)
-    private Integer color;
+    private String color;
 
-    public Status(String name, String description, Integer color) {
+    public Status(String name, String description, String color) {
         this.name = name;
         this.description = description;
         this.color = color;    
@@ -54,11 +54,11 @@ public class Status implements Serializable {
         this.description = description;
     }
 
-    public Integer getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Integer color) {
+    public void setColor(String color) {
         this.color = color;
     }
 }

@@ -19,7 +19,7 @@ public class Rooms implements Serializable {
     private Long id;
 
     @Column (name = "no_room")
-    private Integer no_room;
+    private Long no_room;
 
     @Column (name = "name", unique = true)
     private String name;
@@ -28,7 +28,7 @@ public class Rooms implements Serializable {
     private String bed;
 
     @Column (name = "capacity")
-    private Integer capacity;
+    private Long capacity;
 
     @Column (name = "id_hotel")
     @Id
@@ -37,7 +37,7 @@ public class Rooms implements Serializable {
     public Rooms() {
     }
 
-    public Rooms(Integer no_room, String name, String bed, Integer capacity, Long id_hotel) {
+    public Rooms(Long no_room, String name, String bed, Long capacity, Long id_hotel) {
         this.no_room = no_room;
         this.name = name;
         this.bed = bed;
@@ -50,11 +50,11 @@ public class Rooms implements Serializable {
         return id;
     }
 
-    public Integer getNo_room() {
+    public Long getNo_room() {
         return no_room;
     }
 
-    public void setNo_room(Integer no_room) {
+    public void setNo_room(Long no_room) {
         this.no_room = no_room;
     }
 
@@ -74,11 +74,11 @@ public class Rooms implements Serializable {
         this.bed = bed;
     }
 
-    public Integer getCapacity() {
+    public Long getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(Integer capacity) {
+    public void setCapacity(Long capacity) {
         this.capacity = capacity;
     }
 
