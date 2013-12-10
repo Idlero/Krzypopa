@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" afterPath="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/test/java/HibernateTest.java" afterPath="$PROJECT_DIR$/jar/src/test/java/HibernateTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/war/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Status.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Status.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jar/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/jar/src/main/resources/hibernate.cfg.xml" />
       <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\client.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java" />
+      <change type="MOVED" beforePath="G:\Doc\GitHub\BookingSystem\jar\src\main\java\pl\bookingsystem\db\entity\employee.java" afterPath="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Employee.java" />
     </list>
     <ignored path="BookingSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,14 +33,14 @@
     <file path="/addMessage.jsp" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385920739870" ignored="false" />
     <file path="/listMessages.jsp" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386011186944" ignored="false" />
     <file path="/BookingSystem Data Source" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385932777427" ignored="false" />
-    <file path="/Main.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386618407789" ignored="false" />
+    <file path="/Main.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386701359409" ignored="false" />
     <file path="/GenericDAOImpl.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1385932981410" ignored="false" />
     <file path="/MessagesActionBean.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386007035999" ignored="false" />
     <file path="/index.jsp" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386616651369" ignored="false" />
     <file path="/index.html" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386008582594" ignored="false" />
-    <file path="/fragment.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386189932722" ignored="false" />
+    <file path="/fragment.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386700934122" ignored="false" />
     <file path="/Person.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386012857124" ignored="false" />
-    <file path="/Dummy.txt" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386611520505" ignored="false" />
+    <file path="/Dummy.txt" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386700734577" ignored="false" />
     <file path="/Client.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386615507652" ignored="false" />
     <file path="/Dodatek.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386192091764" ignored="false" />
     <file path="/Hotel.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386192349412" ignored="false" />
@@ -39,12 +48,14 @@
     <file path="/Dodatki.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386542200935" ignored="false" />
     <file path="/Pracownik.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386197800165" ignored="false" />
     <file path="/Rezerwacja.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386198132587" ignored="false" />
-    <file path="/Status.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386541242315" ignored="false" />
+    <file path="/Status.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386698915462" ignored="false" />
     <file path="/System.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386198832546" ignored="false" />
-    <file path="/ClientDAOImpl.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386612455596" ignored="false" />
-    <file path="$PROJECT_DIR$/jar/log/hibernate_sql.log" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386615924621" ignored="false" />
+    <file path="/ClientDAOImpl.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386702025513" ignored="false" />
     <file path="/blank-page.html" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386617387646" ignored="false" />
     <file path="/bootstrap-elements.html" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386617405164" ignored="false" />
+    <file path="/a.dummy" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386700589945" ignored="false" />
+    <file path="/HibernateTest.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386701402127" ignored="false" />
+    <file path="/ClientDAO.java" changelist="9c8f7184-c5e2-4c3f-a3b9-cea6953a2741" time="1386701947674" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +75,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -102,6 +112,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -111,21 +122,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="146" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="33" column="54" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
+      <file leaf-file-name="HibernateTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/test/java/HibernateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="36" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+            <state line="49" column="57" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="80" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDAOImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="46" selection-start="1228" selection-end="1228" vertical-scroll-proportion="-15.04">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,71 +163,65 @@
       <file leaf-file-name="GenericDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="31" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addClient.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/addClient.jsp">
+      <file leaf-file-name="Hotel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
+            <state line="17" column="12" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listClients.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/listClients.jsp">
+      <file leaf-file-name="Employee.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="49" selection-start="660" selection-end="660" vertical-scroll-proportion="-8.5">
-              <folding />
+            <state line="19" column="12" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddClientActionBean.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java">
+      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="44" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.5226537">
-              <folding />
+            <state line="20" column="12" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListClientsActionBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/ListClientsActionBean.java">
+      <file leaf-file-name="AdditionRooms.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="49" column="35" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorActionBean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/CalculatorActionBean.java">
+      <file leaf-file-name="Addition.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="25" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="69" column="47" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.83495146">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,22 +244,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Status.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java" />
         <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Employee.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Hotel.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImplImpl.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java" />
+        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" />
+        <option value="$PROJECT_DIR$/jar/src/test/java/HibernateTest.java" />
         <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java" />
         <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java" />
-        <option value="dbtable:/4c521ebc/19a644d8-3a98-4c61-bc96-4754d4444ee2/bookingsystem..addition" />
-        <option value="$PROJECT_DIR$/jar/src/test/java/HibernateTest.java" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-grid.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/blank-page.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/typography.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/forms.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/charts.html" />
-        <option value="$PROJECT_DIR$/war/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java" />
-        <option value="$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java" />
-        <option value="$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java" />
       </list>
     </option>
   </component>
@@ -329,6 +350,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -404,74 +426,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -509,7 +463,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -517,47 +513,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BookingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -614,10 +574,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -727,13 +683,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -764,6 +779,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rastek\Documents\Politechnika Krakowska\V\PROJEKT\BookingSystem\war" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.bookingsystem.db.dao.impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rastek\Documents\Politechnika Krakowska\V\PROJEKT\BookingSystem\war\src\main\webapp" />
@@ -1055,13 +1073,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25938568" sideWeight="0.42640364" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30202776" sideWeight="0.65324163" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30202776" sideWeight="0.65324163" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1075,15 +1094,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24914676" sideWeight="0.86039454" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1339381" sideWeight="0.65324163" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1339381" sideWeight="0.65324163" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327112" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24226254" sideWeight="0.65324163" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34675834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34675834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1152,75 +1170,100 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/tables.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate/3.2.6.ga/hibernate-3.2.6.ga.jar!/org/hibernate/event/def/DefaultLoadEventListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="35" selection-start="15900" selection-end="15900" vertical-scroll-proportion="-79.92208">
+        <state line="24" column="33" selection-start="2123" selection-end="2125" vertical-scroll-proportion="-7.82">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/forms.html">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Reservation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="6481" selection-end="6481" vertical-scroll-proportion="-26.935064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/charts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="46" selection-start="6597" selection-end="6597" vertical-scroll-proportion="-26.948051">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="6507" selection-end="6507" vertical-scroll-proportion="-24.948051">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/modules/admin_panel/pages/bootstrap-elements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="6519" selection-end="6519" vertical-scroll-proportion="-2.2857144">
+        <state line="32" column="12" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#2;n#div#0;n#div#2;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#3;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#5;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Rooms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="47" selection-start="7024" selection-end="7024" vertical-scroll-proportion="-1.987013">
-          <folding />
+        <state line="18" column="12" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/GenericDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="347" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/common/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="36" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+        <state line="33" column="54" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/test/java/HibernateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="57" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="80" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/impl/ClientDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="46" selection-start="1228" selection-end="1228" vertical-scroll-proportion="-15.04">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="12" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1229,66 +1272,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="146" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
+        <state line="20" column="12" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/ClientDAO.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/AdditionRooms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="49" column="35" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/dao/GenericDAO.java">
+    <entry file="file://$PROJECT_DIR$/jar/src/main/java/pl/bookingsystem/db/entity/Addition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/addClient.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/webapp/WEB-INF/pages/listClients.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="660" selection-end="660" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/ListClientsActionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/CalculatorActionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="25" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/src/main/java/pl/bookingsystem/action/AddClientActionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="44" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.5226537">
-          <folding />
+        <state line="69" column="47" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.83495146">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
