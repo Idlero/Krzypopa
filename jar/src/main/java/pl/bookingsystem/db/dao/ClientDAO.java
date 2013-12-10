@@ -9,5 +9,6 @@ public interface ClientDAO extends GenericDAO<Client, Long> {
 
     public Client findByClientName(String name, String surname);
 
+    public Client findeClientByReservation();
 
 }
