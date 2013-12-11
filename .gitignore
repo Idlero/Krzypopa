@@ -16,6 +16,20 @@ local.properties
 .settings/
 .loadpath
 
+
+# Log files
+log/*
+
+# IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Maven target dir
+*/target/*
+
+
 # External tool builders
 .externalToolBuilders/
 

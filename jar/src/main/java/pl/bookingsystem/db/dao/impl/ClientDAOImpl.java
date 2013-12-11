@@ -32,7 +32,7 @@ public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements Clien
     }
 
 
-  public Client findeClientByReservation(){
+  public Client findClientByReservation(){
    Client client = null;
 
         return client;

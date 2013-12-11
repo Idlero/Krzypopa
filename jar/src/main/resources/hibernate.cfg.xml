@@ -40,7 +40,7 @@
        <!-- <mapping class="pl.bookingsystem.db.entity.Additionn"/>
         <mapping class="pl.bookingsystem.db.entity.Reservationn"/>
         <mapping class="pl.bookingsystem.db.entity.Hotel"/>
-        <mapping class="pl.bookingsystem.db.entity.Rooms/>
+        <mapping class="pl.bookingsystem.db.entity.Room>
         <mapping class="pl.bookingsystem.db.entity.Additionn"/>
         <mapping class="pl.bookingsystem.db.entity.Employee/>
         <mapping class="pl.bookingsystem.db.entity.Status"/>
