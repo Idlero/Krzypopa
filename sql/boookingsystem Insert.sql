@@ -1,0 +1,153 @@
+INSERT INTO Hotel_User
+  (Hotelid, 
+  Userid) 
+VALUES 
+  (?, 
+  ?);
+INSERT INTO 'User'
+  (id, 
+  first_name, 
+  last_name, 
+  pesel, 
+  nip, 
+  email, 
+  phone_number, 
+  password, 
+  type) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Status
+  (id, 
+  type, 
+  description) 
+VALUES 
+  (?, 
+  ?, 
+  ?);
+INSERT INTO Room_Price
+  (Roomid, 
+  Priceid) 
+VALUES 
+  (?, 
+  ?);
+INSERT INTO Price
+  (id, 
+  room_type, 
+  person_type, 
+  value) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Client_Hotel
+  (Clientid, 
+  Hotelid) 
+VALUES 
+  (?, 
+  ?);
+INSERT INTO Client
+  (id, 
+  first_name, 
+  last_name, 
+  pesel, 
+  nip, 
+  email, 
+  phone_number, 
+  password) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Room_Reservation
+  (Roomid, 
+  Reservationid) 
+VALUES 
+  (?, 
+  ?);
+INSERT INTO Reservation
+  (id, 
+  name, 
+  date_from, 
+  date_to, 
+  person_count, 
+  date_edit, 
+  Clientid, 
+  Statusid) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Addition
+  (id, 
+  name, 
+  description, 
+  Roomid) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Room
+  (id, 
+  room_no, 
+  name, 
+  description, 
+  bed, 
+  capacity, 
+  Hotelid) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Address
+  (id, 
+  city, 
+  street, 
+  building_no, 
+  apartment_no, 
+  postcode, 
+  country) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Hotel
+  (id, 
+  name, 
+  description, 
+  phone_number, 
+  email) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+
