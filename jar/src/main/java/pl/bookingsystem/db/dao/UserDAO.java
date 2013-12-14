@@ -1,11 +1,11 @@
-package pl.bookingsystem.db.entity;
+package pl.bookingsystem.db.dao;
 
 /**
  * Created with IntelliJ IDEA.
- * User: rastek
- * Date: 11.12.13
- * Time: 20:16
+ * User: thx-
+ * Date: 14.12.13
+ * Time: 11:46
  * To change this template use File | Settings | File Templates.
  */
-public class Owner {
+public interface UserDAO {
 }

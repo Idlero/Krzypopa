@@ -3,7 +3,9 @@ package pl.bookingsystem.common;
 import pl.bookingsystem.db.dao.ClientDAO;
 import pl.bookingsystem.db.dao.impl.ClientDAOImpl;
 import pl.bookingsystem.db.entity.Client;
+import pl.bookingsystem.db.entity.Reservation;
 
+import java.util.Date;
 import java.util.List;
 
 
@@ -11,7 +13,11 @@ public class Main {
 
 	public static void main(String[] args) {
         ClientDAO dao = new ClientDAOImpl();
-		
+
+        Client dorez =new Client("Chuck", "Norris", "chuckzajebisty@gmail.com", "chucknorris");
+        Date data_form= new Date(113,10,13);
+        Date data_to = new Date(113,10,15);
+        Reservation r =new Reservation("Nowa Rezerwacja",data_form, data_to,10 , new Date(), dorez);
 		// Read
 		System.out.println("******* READ *******");
 		List clients = dao.selectAll(Client.class);
@@ -21,9 +27,6 @@ public class Main {
 		// Write
 		System.out.println("******* WRITE *******");
         Client client = new Client("Chuck", "Norris", "chuckzajebisty@gmail.com", "chucknorris");
-        Client someone = new Client("Zenek","Breszka", "ul.Podmiejska", (long) (int) 910728012, (long) (int) 1231231231,"zenk@breszka.com",(long) (int) 500600500, "Acocieto1");
-        dao.save(someone);
-        //Integer  clientID = (int) (long) client.getId();
         client = dao.save(client);
 		client = dao.selectByID(Client.class, client.getId());
 		System.out.printf("%d %s %s \n", client.getId(), client.getFirst_name(), client.getLast_name());

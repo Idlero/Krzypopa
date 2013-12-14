@@ -1,5 +1,7 @@
 package pl.bookingsystem.db.entity;
 
+import javax.persistence.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: rastek
@@ -7,7 +9,10 @@ package pl.bookingsystem.db.entity;
  * Time: 20:17
  * To change this template use File | Settings | File Templates.
  */
+@Entity
+@Table (name = "")
+
 public class Invoice {
 
-    //TODO            implement getter& setters balbalab
+    //TODO
 }

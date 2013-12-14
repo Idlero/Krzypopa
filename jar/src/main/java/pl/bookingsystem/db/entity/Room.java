@@ -1,18 +1,16 @@
 package pl.bookingsystem.db.entity;
 
-import org.apache.log4j.Logger;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "room")
 
 public class Room implements Serializable {
 
-    @Transient
-    private static Logger logger = Logger.getLogger(Room.class);
 
     @Column (name = "id_room", unique = true)
     @Id
@@ -31,23 +29,22 @@ public class Room implements Serializable {
     @Column (name = "capacity")
     private Long capacity;
 
-    @Column (name = "id_hotel")
-    @Id
-    private Long id_hotel;
+    @ManyToOne
+    @JoinColumn (name = "Hotelid")
+    private Hotel hotel;
 
- //   @ManyToOne(targetEntity = Addition.class, cascade)
-    private List<Addition> additions;
+    @OneToMany(mappedBy = "room")
+    private Set<Addition> additions;
 
-    public Room() {
-    }
+    @ManyToMany (mappedBy = "rooms")
+    private Set<Reservation> reservations = new HashSet<Reservation>();
 
-    public Room(Long no_room, String name, String bed, Long capacity, Long id_hotel) {
+    public Room(Long no_room, String name, String bed, Long capacity, Hotel hotel) { //Tworzenie nowego pokoju
         this.no_room = no_room;
         this.name = name;
         this.bed = bed;
         this.capacity = capacity;
-        this.id_hotel = id_hotel;
-
+        this.hotel = hotel;
     }
 
     public Long getId() {
@@ -86,13 +83,32 @@ public class Room implements Serializable {
         this.capacity = capacity;
     }
 
-    public Long getId_hotel() {
-        return id_hotel;
+    public Hotel getHotel() {
+        return hotel;
     }
 
-    public void setId_hotel(Long id_hotel) {
-        this.id_hotel = id_hotel;
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
     }
 
+    public Set<Addition> getAdditions() {
+        return additions;
+    }
+
+    public void setAdditions(Set<Addition> additions) {
+        this.additions = additions;
+    }
+
+    public Set<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(Reservation reservations) {
+        this.reservations.add(reservations);
+    }
+    public void setAdditions(Addition additions) {
+        this.additions.add(additions);
+    }
 
 }
+

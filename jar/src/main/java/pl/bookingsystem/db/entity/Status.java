@@ -1,17 +1,16 @@
 package pl.bookingsystem.db.entity;
-import org.apache.log4j.Logger;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "status")
 public class Status implements Serializable {
 
-    @Transient
-    private static Logger logger = Logger.getLogger(Status.class);
 
-    @Column(name = "id_status", unique = true)
+    @Column(name = "id", unique = true)
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
@@ -22,16 +21,26 @@ public class Status implements Serializable {
     @Column (name = "description")
     private String description;
 
-    @Column (name = "color", unique = true)
-    private String color;
+    @OneToMany(mappedBy = "status")
+    private Set<Reservation> reservations = new HashSet<Reservation>();
 
-    public Status(String name, String description, String color) {
+    public Status(String name, String description) {
         this.name = name;
         this.description = description;
-        this.color = color;    
     }
 
-    public Status() {
+    public Status(String name, String description, Set<Reservation> reservations) {
+        this.name = name;
+        this.description = description;
+        this.reservations = reservations;
+    }
+
+    public Set<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(Set<Reservation> reservations) {
+        this.reservations = reservations;
     }
 
     public Long getId() {
@@ -54,11 +63,4 @@ public class Status implements Serializable {
         this.description = description;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
 }

@@ -2,10 +2,10 @@ package pl.bookingsystem.db.dao;
 
 /**
  * Created with IntelliJ IDEA.
- * User: rastek
- * Date: 11.12.13
- * Time: 21:08
+ * User: thx-
+ * Date: 14.12.13
+ * Time: 11:46
  * To change this template use File | Settings | File Templates.
  */
-public interface OwnerDAO {
+public interface AddressDAO {
 }
