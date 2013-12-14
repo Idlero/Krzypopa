@@ -43,7 +43,7 @@ public class HibernateTest {
          Client expected = clientManager.selectByID(Client.class, (long) 1);
 
         //then
-        // Assert.assertEquals(expected.getId(), 1);
+         Assert.assertEquals((Object) expected.getId(),(long) 1);
 
     }
 

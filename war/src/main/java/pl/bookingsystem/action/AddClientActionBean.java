@@ -4,7 +4,6 @@ import net.sourceforge.stripes.action.*;
 import net.sourceforge.stripes.validation.*;
 import pl.bookingsystem.db.dao.ClientDAO;
 import pl.bookingsystem.db.dao.impl.ClientDAOImpl;
-import pl.bookingsystem.db.entity.Client;
 
 import java.util.List;
 

@@ -1,19 +1,15 @@
 package pl.bookingsystem.db.entity;
 
-import org.apache.log4j.Logger;
-
 import javax.persistence.*;
 import java.io.Serializable;
+
 
 @Entity
 @Table(name = "addition")
 
 public class Addition implements Serializable {
 
-    @Transient
-    private static Logger logger = Logger.getLogger(Addition.class);
-
-    @Column(name ="id_addition", unique = true)
+    @Column(name ="id", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -24,30 +20,31 @@ public class Addition implements Serializable {
     @Column (name = "description")
     private String description;
 
-    @Column (name = "satatus")
-    private Long status;
-    
-    public Addition(){
+    @ManyToOne
+    @JoinColumn (name= "Roomid")
+    private Room room;
 
-    }
-
-    public Addition(String name, String description, Long status) {
-
+    public Addition(String name, String description) {
         this.name = name;
         this.description = description;
-        this.status = status;
+    }
+
+    public Addition(String name, String description, Room room) {
+        this.name = name;
+        this.description = description;
+        this.room = room;
     }
 
     public Long getId() {
         return id;
     }
 
-    public Long getStatus() {
-        return status;
+    public String getName() {
+        return name;
     }
 
-    public void setStatus(Long status) {
-        this.status = status;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -58,12 +55,12 @@ public class Addition implements Serializable {
         this.description = description;
     }
 
-    public String getName() {
-        return name;
+    public Room getRoom() {
+        return room;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRoom(Room room) {
+        this.room = room;
     }
 }
 
