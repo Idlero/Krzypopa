@@ -12,13 +12,13 @@ public class Status implements Serializable {
 
     @Column(name = "id", unique = true)
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name ="name")
+    @Column(name = "name")
     private String name;
 
-    @Column (name = "description")
+    @Column(name = "description")
     private String description;
 
     @OneToMany(mappedBy = "status")

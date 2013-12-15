@@ -3,10 +3,6 @@ package pl.bookingsystem.db.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Created with IntelliJ IDEA.
  * User: thx-
@@ -16,76 +12,51 @@ import java.util.Set;
  */
 
 @Entity
-@Table (name = "Client")
+@Table(name = "Client")
 public class Client implements Serializable {
 
-    @Column (name = "id")
+    @Column(name = "id")
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "first_name")
+    @Column(name = "first_name", nullable = false)
     private String first_name;
 
-    @Column (name = "last_name")
+    @Column(name = "last_name", nullable = false)
     private String last_name;
 
-    @Column (name = "pesel")
+    @Column(name = "pesel", nullable = false, unique = true)
     private Long pesel;
 
-    @Column (name = "nip")
-    private Long  nip;
+    @Column(name = "nip")
+    private Long nip;
 
-    @Column (name = "email")
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column (name = "phone_number")
+    @Column(name = "phone_number", nullable = false)
     private String phone_number;
 
-    @Column (name = "password")
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @OneToOne (mappedBy = "client", cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
-    @OneToMany(mappedBy = "reservation")
+/*
+   // @OneToMany(mappedBy = "reservation")
     private Set<Reservation> reservations;
 
     @ManyToMany (fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
     private Set<Hotel> id_hotel = new HashSet<Hotel>();
+*/
 
 
     public Client() {
     }
 
-    public Client(String last_name, String first_name, String email, String password) { //Minimalny do testów
-        this.last_name = last_name;
-        this.first_name = first_name;
-        this.email = email;
-        this.password = password;
-    }
-
-    public Client(String first_name, String last_name, String email, String password, Address address, Set<Hotel> id_hotel) { //+adres i hotel
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.email = email;
-        this.password = password;
-        this.address = address;
-        this.id_hotel = id_hotel;
-    }
-
-    public Client(String first_name, String last_name, Long pesel, String email, String phone_number, String password, Address address, Set<Hotel> id_hotel) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.pesel = pesel;
-        this.email = email;
-        this.phone_number = phone_number;
-        this.password = password;
-        this.address = address;
-        this.id_hotel = id_hotel;
-    }
-
-    public Client(String first_name, String last_name, Long pesel, Long nip, String email, String phone_number, String password, Address address, Set<Hotel> id_hotel) {
+    public Client(String first_name, String last_name, Long pesel, Long nip, String email, String phone_number, String password, Address address) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.pesel = pesel;
@@ -94,20 +65,6 @@ public class Client implements Serializable {
         this.phone_number = phone_number;
         this.password = password;
         this.address = address;
-        this.id_hotel = id_hotel;
-    }
-
-    public Client(String first_name, String last_name, Long pesel, Long nip, String email, String phone_number, String password, Address address, Set<Reservation> reservations, Set<Hotel> id_hotel) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.pesel = pesel;
-        this.nip = nip;
-        this.email = email;
-        this.phone_number = phone_number;
-        this.password = password;
-        this.address = address;
-        this.reservations = reservations;
-        this.id_hotel = id_hotel;
     }
 
     public Long getId() {
@@ -178,7 +135,7 @@ public class Client implements Serializable {
         this.address = address;
     }
 
-    public Set<Reservation> getReservations() {
+ /*   public Set<Reservation> getReservations() {
         return reservations;
     }
 
@@ -201,6 +158,6 @@ public class Client implements Serializable {
     public void setId_hotel(Hotel id_hotel) {
         this.id_hotel.add(id_hotel);
     }
-
+*/
 
 }

@@ -13,47 +13,46 @@ import java.util.Set;
 public class Reservation implements Serializable {
 
 
-    @Column (name = "id", unique = true)
+    @Column(name = "id", unique = true)
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "name")
+    @Column(name = "name")
     private String name;
 
-    @Column (name = "date_from")
+    @Column(name = "date_from")
     private Date date_from;
 
-    @Column (name = "date_to")
+    @Column(name = "date_to")
     private Date date_to;
 
-    @Column (name = "person_count")
+    @Column(name = "person_count")
     private Integer person_count;
 
-    @Column (name = "date_edit")
+    @Column(name = "date_edit")
     private Date date_edit;
 
 
-
     @ManyToOne
-    @JoinColumn (name = "Clientid")
+    @JoinColumn(name = "Clientid")
     private Client client;
 
     @ManyToOne
-    @JoinColumn (name = "Statusid")
+    @JoinColumn(name = "Statusid")
     private Status status;
 
 
-    @ManyToMany (cascade = {CascadeType.ALL})
+    @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "room_reservation",
-                joinColumns={@JoinColumn (name = "Reservationid", nullable = false)},
-                inverseJoinColumns = {@JoinColumn (name = "Roomid")})
+            joinColumns = {@JoinColumn(name = "Reservationid", nullable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "Roomid")})
     private Set<Room> rooms = new HashSet<Room>();
 
 
-   private Status defaultStatus =new Status("Rezerwacja", "Rezerwacja bez potwierdzenia czy zaplaty");
+    private Status defaultStatus = new Status("Rezerwacja", "Rezerwacja bez potwierdzenia czy zaplaty");
 
-   public Reservation(String name, Date date_from, Date date_to, Integer person_count, Date date_edit, Client client, Status status) {
+    public Reservation(String name, Date date_from, Date date_to, Integer person_count, Date date_edit, Client client, Status status) {
         this.name = name;
         this.date_from = date_from;
         this.date_to = date_to;
@@ -72,7 +71,6 @@ public class Reservation implements Serializable {
         this.client = client;
         this.status = defaultStatus;
     }
-
 
 
     public Long getId() {

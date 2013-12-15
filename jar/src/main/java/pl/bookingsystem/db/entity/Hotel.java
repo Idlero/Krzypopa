@@ -1,7 +1,6 @@
 package pl.bookingsystem.db.entity;
 
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
@@ -12,40 +11,40 @@ import java.util.Set;
 public class Hotel implements Serializable {
 
 
-    @Column (name = "id", unique = true)
+    @Column(name = "id", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "name")
+    @Column(name = "name")
     private String name;
 
-    @Column (name = "description")
+    @Column(name = "description")
     private String description;
 
-    @Column (name = "phone_number")
+    @Column(name = "phone_number")
     private String phone_number;
 
-    @Column (name = "email")
+    @Column(name = "email")
     private String email;
 
-    @OneToOne (mappedBy = "hotel", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "hotel", cascade = CascadeType.ALL)
     private Address address;
 
-    @ManyToMany (fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
     @JoinTable(name = "client_hotel",
-               joinColumns = {@JoinColumn(name = "Hotelid")},
-               inverseJoinColumns = {@JoinColumn (name = "Clientid")}
-               )
+            joinColumns = {@JoinColumn(name = "Hotelid")},
+            inverseJoinColumns = {@JoinColumn(name = "Clientid")}
+    )
     private Set<Client> client_id = new HashSet<Client>();
 
-    @ManyToMany (fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable (name = "hotel_user",
-                joinColumns = {@JoinColumn (name = "Hotelid")},
-                inverseJoinColumns = {@JoinColumn (name = "Userid")})
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "hotel_user",
+            joinColumns = {@JoinColumn(name = "Hotelid")},
+            inverseJoinColumns = {@JoinColumn(name = "Userid")})
     private Set<User> users = new HashSet<User>();
 
-    @OneToMany  (mappedBy = "rooms")
+    @OneToMany(mappedBy = "rooms")
     private Set<Room> rooms;
 
 

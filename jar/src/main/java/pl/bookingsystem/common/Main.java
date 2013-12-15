@@ -1,18 +1,12 @@
 package pl.bookingsystem.common;
 
-import pl.bookingsystem.db.dao.ClientDAO;
-import pl.bookingsystem.db.dao.impl.ClientDAOImpl;
-import pl.bookingsystem.db.entity.Client;
-import pl.bookingsystem.db.entity.Reservation;
-
-import java.util.Date;
-import java.util.List;
-
-
 public class Main {
 
-	public static void main(String[] args) {
-        ClientDAO dao = new ClientDAOImpl();
+    public static void main(String[] args) {
+
+        AddToDB.addUser();
+
+      /*  ClientDAO dao = new ClientDAOImpl();
 
         Client dorez =new Client("Chuck", "Norris", "chuckzajebisty@gmail.com", "chucknorris");
         Date data_form= new Date(113,10,13);
@@ -49,6 +43,7 @@ public class Main {
         System.out.println("Object:" + client3);
 		dao.delete(client);
 		client3 = dao.selectByID(Client.class,  client.getId());
-		System.out.println("Object:" + client3);
-	}
+		System.out.println("Object:" + client3);*/
+        System.exit(0);
+    }
 }

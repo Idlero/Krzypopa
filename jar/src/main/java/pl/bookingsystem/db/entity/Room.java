@@ -12,31 +12,31 @@ import java.util.Set;
 public class Room implements Serializable {
 
 
-    @Column (name = "id_room", unique = true)
+    @Column(name = "id_room", unique = true)
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO )
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "no_room")
+    @Column(name = "no_room")
     private Long no_room;
 
-    @Column (name = "name", unique = true)
+    @Column(name = "name", unique = true)
     private String name;
 
-    @Column (name = "bed")
+    @Column(name = "bed")
     private String bed;
 
-    @Column (name = "capacity")
+    @Column(name = "capacity")
     private Long capacity;
 
     @ManyToOne
-    @JoinColumn (name = "Hotelid")
+    @JoinColumn(name = "Hotelid")
     private Hotel hotel;
 
     @OneToMany(mappedBy = "room")
     private Set<Addition> additions;
 
-    @ManyToMany (mappedBy = "rooms")
+    @ManyToMany(mappedBy = "rooms")
     private Set<Reservation> reservations = new HashSet<Reservation>();
 
     public Room(Long no_room, String name, String bed, Long capacity, Hotel hotel) { //Tworzenie nowego pokoju
@@ -106,6 +106,7 @@ public class Room implements Serializable {
     public void setReservations(Reservation reservations) {
         this.reservations.add(reservations);
     }
+
     public void setAdditions(Addition additions) {
         this.additions.add(additions);
     }

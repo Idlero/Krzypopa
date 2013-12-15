@@ -1,10 +1,8 @@
 package pl.bookingsystem.db.entity;
 
 
-
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,46 +13,35 @@ import java.util.Set;
  */
 
 @Entity
-@Table (name ="address")
+@Table(name = "address")
 
 public class Address implements Serializable {
 
-    @Column (name = "id")
+    @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
-    @Column (name = "city")
-    private  String city;
+    @Column(name = "city")
+    private String city;
 
-    @Column (name = "street")
+    @Column(name = "street")
     private String street;
 
-    @Column (name = "building_no")
-    private Long building_no;
+    @Column(name = "building_no")
+    private Integer building_no;
 
-    @Column (name = "apartment_no")
-    private Long apartment_no;
+    @Column(name = "apartment_no")
+    private Integer apartment_no;
 
-    @Column (name = "postcode")
-    private Long poscode;
+    @Column(name = "postcode")
+    private String poscode;
 
     @Column(name = "country")
     private String country;
 
-    @OneToOne
-    @PrimaryKeyJoinColumn
-    private User user;
 
-    @OneToOne
-    @PrimaryKeyJoinColumn
-    private Client client;
-
-    @OneToOne
-    @PrimaryKeyJoinColumn
-    private Hotel hotel;
-
-    public Address(String city, String street, Long building_no, Long poscode, String country) {
+    public Address(String city, String street, Integer building_no, String poscode, String country) {
         this.city = city;
         this.street = street;
         this.building_no = building_no;
@@ -62,55 +49,16 @@ public class Address implements Serializable {
         this.country = country;
     }
 
-    public Address(String city, String street, Long building_no, Long poscode, String country, User user) {
+    public Address(String city, String street, Integer building_no, Integer apartment_no, String poscode, String country) {
         this.city = city;
         this.street = street;
         this.building_no = building_no;
+        this.apartment_no = apartment_no;
         this.poscode = poscode;
         this.country = country;
-        this.user = user;
     }
 
-    public Address(String city, String street, Long building_no, Long poscode, String country, Client client) {
-        this.city = city;
-        this.street = street;
-        this.building_no = building_no;
-        this.poscode = poscode;
-        this.country = country;
-        this.client = client;
-    }
-
-    public Address(String city, String street, Long building_no, Long poscode, String country, Hotel hotel) {
-        this.city = city;
-        this.street = street;
-        this.building_no = building_no;
-        this.poscode = poscode;
-        this.country = country;
-        this.hotel = hotel;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
-
-    public Hotel getHotel() {
-        return hotel;
-    }
-
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public Address() {
     }
 
     public long getId() {
@@ -133,27 +81,27 @@ public class Address implements Serializable {
         this.street = street;
     }
 
-    public Long getBuilding_no() {
+    public Integer getBuilding_no() {
         return building_no;
     }
 
-    public void setBuilding_no(Long building_no) {
+    public void setBuilding_no(Integer building_no) {
         this.building_no = building_no;
     }
 
-    public Long getApartment_no() {
+    public Integer getApartment_no() {
         return apartment_no;
     }
 
-    public void setApartment_no(Long apartment_no) {
+    public void setApartment_no(Integer apartment_no) {
         this.apartment_no = apartment_no;
     }
 
-    public Long getPoscode() {
+    public String getPoscode() {
         return poscode;
     }
 
-    public void setPoscode(Long poscode) {
+    public void setPoscode(String poscode) {
         this.poscode = poscode;
     }
 

@@ -1,13 +1,15 @@
 package pl.bookingsystem.db.dao.impl;
 
 import org.apache.log4j.Logger;
-import org.hibernate.*;
+import org.hibernate.HibernateException;
+import org.hibernate.NonUniqueResultException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import pl.bookingsystem.db.dao.ClientDAO;
 import pl.bookingsystem.db.entity.Client;
 import pl.bookingsystem.db.utils.HibernateUtil;
 
-public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements ClientDAO{
+public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements ClientDAO {
 
     private static Logger logger = Logger.getLogger(ClientDAOImpl.class);
 
@@ -32,9 +34,9 @@ public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements Clien
     }
 
 
-  public Client findClientByReservation(){
-   Client client = null;
+    public Client findClientByReservation() {
+        Client client = null;
 
         return client;
-  }
+    }
 }

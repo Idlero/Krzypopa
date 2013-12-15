@@ -9,19 +9,19 @@ import java.io.Serializable;
 
 public class Addition implements Serializable {
 
-    @Column(name ="id", unique = true)
+    @Column(name = "id", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "name")
+    @Column(name = "name")
     private String name;
 
-    @Column (name = "description")
+    @Column(name = "description")
     private String description;
 
     @ManyToOne
-    @JoinColumn (name= "Roomid")
+    @JoinColumn(name = "Roomid")
     private Room room;
 
     public Addition(String name, String description) {

@@ -2,80 +2,77 @@ package pl.bookingsystem.db.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 
-/**
- * Created with IntelliJ IDEA.
- * User: thx-
- * Date: 12.12.13
- * Time: 23:18
- * To change this template use File | Settings | File Templates.
- */
 @Entity
-@Table ( name= "user")
+@Table(name = "user")
 
 public class User implements Serializable {
 
-    @Column (name = "id")
+    @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "first_name")
+    @Column(name = "first_name")
     private String first_name;
 
-    @Column (name = "last_name")
+    @Column(name = "last_name")
     private String last_name;
 
-    @Column (name = "pesel")
+    @Column(name = "pesel")
     private Long pesel;
 
-    @Column (name = "nip")
+    @Column(name = "nip")
     private Long nip;
 
-    @Column (name = "email")
+    @Column(name = "email")
     private String email;
 
-    @Column (name = "phone_number")
+    @Column(name = "phone_number")
     private String phone_number;
 
-    @Column (name = "password")
+    @Column(name = "password")
     private String password;
 
-    @Column (name = "type")
-    private String type;
+    public enum Type {
+        ADMIN, OWNER, EMPLOYEE
+    }
 
-    @ManyToMany (mappedBy = "users")
-    private Set<Hotel> hotels = new HashSet<Hotel>();
+    @Column(name = "type", columnDefinition="enum('ADMIN','OWNER','EMPLOYEE')")
+    @Enumerated(EnumType.STRING)
+    private Type type;
 
-    @OneToOne (mappedBy = "user", cascade = CascadeType.ALL)
+   /* private int permissionValue;
+    private transient Type permission;*/
+
+
+   /* @ManyToMany(mappedBy = "users")
+    private Set<Hotel> hotels = new HashSet<Hotel>();*/
+
+    @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
 
-    public User(String first_name, String last_name, Long pesel, Long nip, String email, String phone_number, String password, String type, Set<Hotel> hotels) {
+    public User() {
+    }
+
+    public User(String first_name, String last_name, Long pesel, String email, String phone_number, String password, Type type, Address address) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.pesel = pesel;
-        this.nip = nip;
         this.email = email;
         this.phone_number = phone_number;
         this.password = password;
         this.type = type;
-        this.hotels = hotels;
-    }
-
-    public User(String first_name, String last_name, String email, String password, String type, Set<Hotel> hotels) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.email = email;
-        this.password = password;
-        this.type = type;
-        this.hotels = hotels;
+        this.address = address;
     }
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirst_name() {
@@ -134,19 +131,19 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
-    public Set<Hotel> getHotels() {
-        return hotels;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setHotels(Set<Hotel> hotels) {
-        this.hotels = hotels;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

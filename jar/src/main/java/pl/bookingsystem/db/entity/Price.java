@@ -12,22 +12,22 @@ import java.io.Serializable;
  */
 
 @Entity
-@Table (name = "price")
+@Table(name = "price")
 
 public class Price implements Serializable {
 
-    @Column (name = "id")
+    @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name = "room_type")
+    @Column(name = "room_type")
     private String roomt_type;
 
-    @Column (name = "persone_type")
+    @Column(name = "persone_type")
     private String prersone_type;
 
-    @Column (name = "value")
+    @Column(name = "value")
     private Integer value;
 
     public Long getId() {

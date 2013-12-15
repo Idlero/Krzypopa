@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import pl.bookingsystem.db.dao.ClientDAO;
 import pl.bookingsystem.db.dao.impl.ClientDAOImpl;
+import pl.bookingsystem.db.entity.Address;
 import pl.bookingsystem.db.entity.Client;
 
 
@@ -14,10 +15,11 @@ public class HibernateTest {
     private ClientDAO clientManager;
     private Client client;
 
+
     @Before
     public void init() {
         clientManager = new ClientDAOImpl();
-        client = new Client("Zenon", "Breszka", "zbreszka@dupa.pl", "dupablada1");
+        client = new Client("Zenon", "Breszka", 90030801234L, 0L, "zbreszka@dupa.pl", "792011166", "admin", new Address("Krakow", "Wadowicka", 6, "12-234", "Polska"));
     }
 
     @Test
@@ -30,21 +32,9 @@ public class HibernateTest {
 
         //then
 
-        Client expected = clientManager.selectByID(Client.class,  client.getId());
+        Client expected = clientManager.selectByID(Client.class, client.getId());
         Assert.assertEquals(expected.getId(), client.getId());
         Assert.assertEquals(expected.getPesel(), client.getPesel());
-    }
-
-    @Test
-    public void shouldReturnClientWithIdEqualsOneFromDatabase() {
-        //given
-
-        //when
-         Client expected = clientManager.selectByID(Client.class, (long) 1);
-
-        //then
-         Assert.assertEquals((Object) expected.getId(),(long) 1);
-
     }
 
     @After

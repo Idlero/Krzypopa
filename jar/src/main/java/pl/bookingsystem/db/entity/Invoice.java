@@ -1,6 +1,7 @@
 package pl.bookingsystem.db.entity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,7 +11,7 @@ import javax.persistence.*;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Table (name = "")
+@Table(name = "")
 
 public class Invoice {
 

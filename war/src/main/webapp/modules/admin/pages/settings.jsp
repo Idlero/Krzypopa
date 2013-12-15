@@ -1,0 +1,17 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<html>
+<head></head>
+<body>
+<h1>Admin Dashboard - Settings</h1>
+
+
+<s:form action="change">
+    <s:textfield name="username" value="%{#session['username']}" label="Change Username"/>
+    <s:password name="oldPassword" value="" label="Current Password"/>
+    <s:password name="newPassword" value="" label="New Password"/>
+    <s:submit/>
+</s:form>
+
+</body>
+</html>
