@@ -14,7 +14,7 @@ public class ClientDAOImpl extends GenericDAOImpl<Client, Long> implements Clien
     public Client findByClientName(String name, String surname) {
         Client client = null;
         try {
-            String sql = "SELECT p FROM Client p WHERE p.first_name = :first_name AND p.last_name = :last_name";
+            String sql = "SELECT p FROM client p WHERE p.first_name = :first_name AND p.last_name = :last_name";
             Session session = HibernateUtil.getSessionFactory().openSession();
 
             Query query = session.createQuery(sql);

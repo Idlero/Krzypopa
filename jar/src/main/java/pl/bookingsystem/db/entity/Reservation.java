@@ -73,6 +73,8 @@ public class Reservation implements Serializable {
         this.status = defaultStatus;
     }
 
+    public Reservation() {
+    }
 
 
     public Long getId() {

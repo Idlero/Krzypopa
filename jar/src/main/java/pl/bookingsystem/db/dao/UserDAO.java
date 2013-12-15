@@ -8,4 +8,6 @@ package pl.bookingsystem.db.dao;
  * To change this template use File | Settings | File Templates.
  */
 public interface UserDAO {
+
+
 }

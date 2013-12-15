@@ -74,6 +74,9 @@ public class User implements Serializable {
         this.hotels = hotels;
     }
 
+    public User() {
+    }
+
     public Long getId() {
         return id;
     }

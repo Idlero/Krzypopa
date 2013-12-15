@@ -89,6 +89,9 @@ public class Address implements Serializable {
         this.hotel = hotel;
     }
 
+    public Address() {
+    }
+
     public User getUser() {
         return user;
     }

@@ -37,7 +37,7 @@ public class Hotel implements Serializable {
                joinColumns = {@JoinColumn(name = "Hotelid")},
                inverseJoinColumns = {@JoinColumn (name = "Clientid")}
                )
-    private Set<Client> client_id = new HashSet<Client>();
+    private Set<Client> client = new HashSet<Client>();
 
     @ManyToMany (fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable (name = "hotel_user",
@@ -45,7 +45,7 @@ public class Hotel implements Serializable {
                 inverseJoinColumns = {@JoinColumn (name = "Userid")})
     private Set<User> users = new HashSet<User>();
 
-    @OneToMany  (mappedBy = "rooms")
+    @OneToMany  (mappedBy = "hotel")
     private Set<Room> rooms;
 
 
@@ -54,6 +54,9 @@ public class Hotel implements Serializable {
         this.description = description;
         this.phone_number = phone_number;
         this.email = email;
+    }
+
+    public Hotel() {
     }
 
     public Long getId() {

@@ -33,8 +33,8 @@
       <column name="postcode" sqlType="VARCHAR" length="8" precision="0" nullable="false" jdbcType="12"/>
       <column name="country" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKAddress883560" columns="id" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="FKAddress614460" columns="id" ref-table="user" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKAddress883560" columns="id" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="FKClient879079" table="client" schema="" catalog="bookingsystem" columns="id"/>
     </table>
     <table name="client" schema="" catalog="bookingsystem" type="TABLE">
@@ -55,8 +55,8 @@
       <column name="Clientid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="Hotelid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="Clientid,Hotelid"/>
-      <foreign-key name="FKClient_Hot718968" columns="Clientid" ref-table="client" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="FKClient_Hot294122" columns="Hotelid" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKClient_Hot718968" columns="Clientid" ref-table="client" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="hotel" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
@@ -125,8 +125,8 @@
       <column name="Roomid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="Reservationid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="Roomid,Reservationid"/>
-      <foreign-key name="FKRoom_Reser623976" columns="Roomid" ref-table="room" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="FKRoom_Reser269207" columns="Reservationid" ref-table="reservation" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKRoom_Reser623976" columns="Roomid" ref-table="room" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="status" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>

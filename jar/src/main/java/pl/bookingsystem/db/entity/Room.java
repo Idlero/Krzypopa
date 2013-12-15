@@ -12,13 +12,13 @@ import java.util.Set;
 public class Room implements Serializable {
 
 
-    @Column (name = "id_room", unique = true)
+    @Column (name = "id", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO )
     private Long id;
 
-    @Column (name = "no_room")
-    private Long no_room;
+    @Column (name = "room_no")
+    private Long room_no;
 
     @Column (name = "name", unique = true)
     private String name;
@@ -39,24 +39,27 @@ public class Room implements Serializable {
     @ManyToMany (mappedBy = "rooms")
     private Set<Reservation> reservations = new HashSet<Reservation>();
 
-    public Room(Long no_room, String name, String bed, Long capacity, Hotel hotel) { //Tworzenie nowego pokoju
-        this.no_room = no_room;
+    public Room(Long room_no, String name, String bed, Long capacity, Hotel hotel) { //Tworzenie nowego pokoju
+        this.room_no = room_no;
         this.name = name;
         this.bed = bed;
         this.capacity = capacity;
         this.hotel = hotel;
     }
 
+    public Room() {
+    }
+
     public Long getId() {
         return id;
     }
 
-    public Long getNo_room() {
-        return no_room;
+    public Long getRoom_no() {
+        return room_no;
     }
 
-    public void setNo_room(Long no_room) {
-        this.no_room = no_room;
+    public void setRoom_no(Long room_no) {
+        this.room_no = room_no;
     }
 
     public String getName() {

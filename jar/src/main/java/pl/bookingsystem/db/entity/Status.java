@@ -15,8 +15,8 @@ public class Status implements Serializable {
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column (name ="name")
-    private String name;
+    @Column (name ="type")
+    private String type;
 
     @Column (name = "description")
     private String description;
@@ -25,14 +25,17 @@ public class Status implements Serializable {
     private Set<Reservation> reservations = new HashSet<Reservation>();
 
     public Status(String name, String description) {
-        this.name = name;
+        this.type = name;
         this.description = description;
     }
 
     public Status(String name, String description, Set<Reservation> reservations) {
-        this.name = name;
+        this.type = name;
         this.description = description;
         this.reservations = reservations;
+    }
+
+    public Status() {
     }
 
     public Set<Reservation> getReservations() {
@@ -47,12 +50,12 @@ public class Status implements Serializable {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getType() {
+        return type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getDescription() {

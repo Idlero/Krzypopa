@@ -35,6 +35,9 @@ public class Addition implements Serializable {
         this.room = room;
     }
 
+    public Addition() {
+    }
+
     public Long getId() {
         return id;
     }

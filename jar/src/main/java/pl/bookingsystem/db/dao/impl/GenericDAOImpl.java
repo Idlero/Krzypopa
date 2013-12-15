@@ -9,9 +9,7 @@ import pl.bookingsystem.db.utils.HibernateUtil;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @author leonidas
- */
+
 public abstract class GenericDAOImpl<T, ID extends Serializable> implements GenericDAO<T, ID> {
 
     @Override
