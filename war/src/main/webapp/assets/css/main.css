@@ -72,6 +72,12 @@ body.padTop53 {
 #right {
   display: none;
 }
+
+.smalltable{
+width: 25px;
+}
+
+
 @media (min-width: 768px) {
   #left {
     width: 100px;
@@ -467,6 +473,11 @@ body.padTop53 {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+#menu ul a:hover {
+color: #FFF;
+}
+
 #menu .nav-header {
   padding: 3px 15px;
   text-transform: uppercase;

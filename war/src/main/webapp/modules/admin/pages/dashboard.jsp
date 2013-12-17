@@ -12,37 +12,28 @@
     <!--IE Compatibility modes-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-TileColor" content="#5bc0de">
-    <meta name="msapplication-TileImage" content="assets/img/metis-tile.png">
+    <meta name="msapplication-TileImage" content="./../../../assets/img/metis-tile.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./../../assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../../assets/lib/bootstrap/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./../../assets/lib/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../../assets/lib/Font-Awesome/css/font-awesome.min.css">
 
     <!-- Metis core stylesheet -->
-    <link rel="stylesheet" href="./../../assets/css/main.css">
-    <link rel="stylesheet" href="./../../assets/css/theme.css">
-    <link rel="stylesheet" href="./../../assets/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-    <!--[if lt IE 9]>
-    <script src="./../../assets/lib/html5shiv/html5shiv.js"></script>
-    <script src="assets/lib/respond/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="./../../../assets/css/main.css">
+    <link rel="stylesheet" href="./../../../assets/css/theme.css">
+    <%--<link rel="stylesheet" href="./../../../assets/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.css">--%>
 
     <!--Modernizr 3.0-->
-    <script src="./../../assets/lib/modernizr-build.min.js"></script>
+    <script src="./../../../assets/lib/modernizr-build.min.js"></script>
 </head>
 <body>
 <div id="wrap">
 <div id="top">
 
     <!-- .navbar -->
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav id="top-menu" class="navbar navbar-inverse navbar-static-top">
 
         <!-- Brand and toggle get grouped for better mobile display -->
         <header class="navbar-header">
@@ -52,8 +43,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="../../../index.html" class="navbar-brand">
-                <img src="./../../assets/img/logo.png" alt="">
+            <a href="dashboard.jsp" class="navbar-brand">
+                <img src="./../../../assets/img/logo.png" alt="">
             </a>
         </header>
         <div class="topnav">
@@ -64,13 +55,8 @@
                     </a>
                 </div>
                 <div class="btn-group">
-                    <a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip" class="btn btn-default btn-sm">
-                        <i class="fa fa-envelope"></i>
-                        <span class="label label-warning">5</span>
-                    </a>
-                    <a data-placement="bottom" data-original-title="Messages" href="#" data-toggle="tooltip" class="btn btn-default btn-sm">
-                        <i class="fa fa-comments"></i>
-                        <span class="label label-danger">4</span>
+                    <a data-url="settings.jsp" data-placement="#context" data-original-title="Settings" class="btn btn-warning btn-sm" id="settings">
+                        <i class="fa fa-cog"></i>
                     </a>
                 </div>
                 <div class="btn-group">
@@ -92,22 +78,15 @@
 
             <!-- .nav -->
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="dashboard.html">Dashboard</a>
-                </li>
-                <li> <a href="../../../table.html">Tables</a> </li>
-                <li> <a href="../../../file.html">File Manager</a> </li>
-                <li class='dropdown '>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Form Elements
-                        <b class="caret"></b>
+                <li>
+                    <a href="#" data-url="reservation.html" data-placement="#context">
+                        <i class="fa fa-tasks"></i>&nbsp;Reservations
                     </a>
-                    <ul class="dropdown-menu">
-                        <li> <a href="../../../form-general.html">General</a> </li>
-                        <li> <a href="../../../form-validation.html">Validation</a> </li>
-                        <li> <a href="../../../form-wysiwyg.html">WYSIWYG</a> </li>
-                        <li> <a href="../../../form-wizard.html">Wizard &amp; File Upload</a> </li>
-                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-url="clients.html" data-placement="#context">
+                        <i class="fa fa-users"></i>&nbsp;Clients
+                    </a>
                 </li>
             </ul><!-- /.nav -->
         </div>
@@ -132,421 +111,148 @@
         <!-- ."main-bar -->
         <div class="main-bar">
             <h3>
-                <i class="fa fa-dashboard"></i>Dashboard</h3>
+                <i class="fa fa-home"></i>&nbsp;DashBoard</h3>
         </div><!-- /.main-bar -->
     </header>
 
     <!-- end header.head -->
 </div><!-- /#top -->
 <div id="left">
-<div class="media user-media">
-    <a class="user-link" href="">
-        <img class="media-object img-thumbnail user-img" alt="User Picture" src="./../../assets/img/user.gif">
-        <span class="label label-danger user-label">16</span>
-    </a>
-    <div class="media-body">
-        <h5 class="media-heading"><s:property value="username"/></h5>
-        <ul class="list-unstyled user-info">
-            <li> <a href="">Administrator</a> </li>
-            <li>Last Access :
-                <br>
-                <small>
-                    <i class="fa fa-calendar"></i>&nbsp;16 Mar 16:32</small>
-            </li>
-        </ul>
-    </div>
-</div>
 
-<!-- #menu -->
-<ul id="menu" class="collapse">
-    <li class="nav-header">Menu</li>
-    <li class="nav-divider"></li>
-    <li class="active">
-        <a href="javascript:;">
-            <i class="fa fa-dashboard"></i>
-            <span class="link-title">Settings</span>
-            <span class="fa arrow"></span>
+    <div class="media user-media">
+        <a class="user-link" href="">
+            <img class="media-object img-thumbnail user-img" alt="User Picture" src="./../../assets/img/user.gif">
+            <span class="label label-danger user-label">16</span>
         </a>
-        <ul>
-            <li class="active">
-                <s:a action="settings">
-                    <i class="fa fa-angle-right"></i>&nbsp;Change username/pass
-                </s:a>
-            </li>
-        </ul>
-    </li>
-    <li class="">
-        <a href="javascript:;">
-            <i class="fa fa-dashboard"></i>
-            <span class="link-title">Dashboard</span>
-            <span class="fa arrow"></span>
-        </a>
-        <ul>
-            <li class="active">
-                <a href="dashboard.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Default Style
-                </a>
-            </li>
-            <li class="">
-                <a href="../../../alterne.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Alternative Style
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class="">
-        <a href="javascript:;">
-            <i class="fa fa-tasks"></i>&nbsp;Components
-            <span class="fa arrow"></span>
-        </a>
-        <ul>
-            <li class="">
-                <a href="../../../icon.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Icon</a>
-            </li>
-            <li class="">
-                <a href="../../../button.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Button</a>
-            </li>
-            <li class="">
-                <a href="../../../progress.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Progress</a>
-            </li>
-            <li class="">
-                <a href="../../../pricing.html">
-                    <i class="fa fa-credit-card"></i>&nbsp;Pricing Table</a>
-            </li>
-            <li class="">
-                <a href="../../../bgimage.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Bg Image</a>
-            </li>
-            <li class="">
-                <a href="../../../bgcolor.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Bg Color</a>
-            </li>
-        </ul>
-    </li>
-    <li class="">
-        <a href="javascript:;">
-            <i class="fa fa-pencil"></i>&nbsp;Forms
-            <span class="fa arrow"></span>
-        </a>
-        <ul>
-            <li class="">
-                <a href="../../../form-general.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;General</a>
-            </li>
-            <li class="">
-                <a href="../../../form-validation.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Validation</a>
-            </li>
-            <li class="">
-                <a href="../../../form-wysiwyg.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;WYSIWYG</a>
-            </li>
-            <li class="">
-                <a href="../../../form-wizard.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Wizard &amp; File Upload</a>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a href="../../../table.html">
-            <i class="fa fa-table"></i>&nbsp; Tables</a>
-    </li>
-    <li>
-        <a href="../../../file.html">
-            <i class="fa fa-file"></i>&nbsp;File Manager</a>
-    </li>
-    <li>
-        <a href="../../../typography.html">
-            <i class="fa fa-font"></i>&nbsp; Typography</a>
-    </li>
-    <li>
-        <a href="../../../maps.html">
-            <i class="fa fa-map-marker"></i>&nbsp;Maps</a>
-    </li>
-    <li>
-        <a href="../../../chart.html">
-            <i class="fa fa fa-bar-chart-o"></i>&nbsp;Charts</a>
-    </li>
-    <li>
-        <a href="../../../calendar.html">
-            <i class="fa fa-calendar"></i>&nbsp;Calendar</a>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <i class="fa fa-exclamation-triangle"></i>&nbsp;Error Pages
-            <span class="fa arrow"></span>
-        </a>
-        <ul>
-            <li>
-                <a href="../../../403.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;403</a>
-            </li>
-            <li>
-                <a href="../../../404.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;404</a>
-            </li>
-            <li>
-                <a href="../../../405.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;405</a>
-            </li>
-            <li>
-                <a href="../../../500.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;500</a>
-            </li>
-            <li>
-                <a href="../../../503.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;503</a>
-            </li>
-            <li>
-                <a href="../../../offline.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;offline</a>
-            </li>
-            <li>
-                <a href="../../../countdown.html">
-                    <i class="fa fa-angle-right"></i>&nbsp;Under Construction</a>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a href="../../../grid.html">
-            <i class="fa fa-columns"></i>&nbsp;Grid</a>
-    </li>
-    <li>
-        <a href="../../../blank.html">
-            <i class="fa fa-square-o"></i>&nbsp;Blank Page</a>
-    </li>
-    <li class="nav-divider"></li>
-    <li>
-        <a href="modules/login/pages/login.html">
-            <i class="fa fa-sign-in"></i>&nbsp;Login Page</a>
-    </li>
-    <li>
-        <a href="javascript:;">Unlimited Level Menu  <span class="fa arrow"></span> </a>
-        <ul>
-            <li>
-                <a href="javascript:;">Level 1  <span class="fa arrow"></span> </a>
-                <ul>
-                    <li> <a href="javascript:;">Level 2</a> </li>
-                    <li> <a href="javascript:;">Level 2</a> </li>
-                    <li>
-                        <a href="javascript:;">Level 2  <span class="fa arrow"></span> </a>
-                        <ul>
-                            <li> <a href="javascript:;">Level 3</a> </li>
-                            <li> <a href="javascript:;">Level 3</a> </li>
-                            <li>
-                                <a href="javascript:;">Level 3  <span class="fa arrow"></span> </a>
-                                <ul>
-                                    <li> <a href="javascript:;">Level 4</a> </li>
-                                    <li> <a href="javascript:;">Level 4</a> </li>
-                                    <li>
-                                        <a href="javascript:;">Level 4  <span class="fa arrow"></span> </a>
-                                        <ul>
-                                            <li> <a href="javascript:;">Level 5</a> </li>
-                                            <li> <a href="javascript:;">Level 5</a> </li>
-                                            <li> <a href="javascript:;">Level 5</a> </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li> <a href="javascript:;">Level 4</a> </li>
-                        </ul>
-                    </li>
-                    <li> <a href="javascript:;">Level 2</a> </li>
-                </ul>
-            </li>
-            <li> <a href="javascript:;">Level 1</a> </li>
-            <li>
-                <a href="javascript:;">Level 1  <span class="fa arrow"></span> </a>
-                <ul>
-                    <li> <a href="javascript:;">Level 2</a> </li>
-                    <li> <a href="javascript:;">Level 2</a> </li>
-                    <li> <a href="javascript:;">Level 2</a> </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul><!-- /#menu -->
+
+        <div class="media-body">
+            <h5 class="media-heading"><s:property value="username"/></h5>
+            <ul class="list-unstyled user-info">
+                <li><a href="">Administartor<%--<s:property value="usertype"/>--%></a></li>
+                <li>Current time :
+                    <br>
+                    <small>
+                        <i class="fa fa-calendar"></i>&nbsp;<div class="current-date"></div>
+                    </small>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- #menu -->
+    <ul id="menu" class="collapse">
+        <li class="nav-header">Menu</li>
+        <li class="nav-divider"></li>
+        <li class="">
+            <a href="index.html">
+                <i class="fa fa-dashboard"></i>
+                <span class="link-title">Dashboard</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <i class="fa fa-tasks"></i>&nbsp;Reservations
+                <span class="fa arrow"></span>
+            </a>
+            <ul>
+                <li class="">
+                    <a href="#" data-url="reservationadd.html" data-placement="#context">
+                        <i class="fa fa fa-plus"></i>&nbsp;Add new </a>
+                </li>
+                <li class="">
+                    <a href="#" data-url="reservation.html" data-placement="#context">
+                        <i class="fa fa-th-list"></i>&nbsp;Browse Existing</a>
+                </li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <i class="fa fa-users"></i>&nbsp;Clients
+                <span class="fa arrow"></span>
+            </a>
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa fa-plus"></i>&nbsp;Add new </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-th-list"></i>&nbsp;Browse Existing</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-suitcase"></i>&nbsp; Rooms
+                <span class="fa arrow"></span></a>
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa fa-plus"></i>&nbsp;Add new </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-th-list"></i>&nbsp;Browse Existing</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-thumbs-up"></i>&nbsp;Status
+                <span class="fa arrow"></span></a>
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa fa-plus"></i>&nbsp;Add new </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-th-list"></i>&nbsp;Browse Existing</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa fa-btc"></i>&nbsp;Prices</a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-foursquare"></i>&nbsp;Additions</a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa  fa-home"></i>&nbsp;Hotel Data</a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa fa-credit-card"></i>&nbsp;User Data</a>
+        </li>
+
+        <li class="nav-divider"></li>
+        <li>
+            <a href="#">
+                <i class="fa fa-sign-in"></i>&nbsp;Login Page</a>
+        </li>
+    </ul><!-- /#menu -->
 </div><!-- /#left -->
 <div id="content">
     <div class="outer">
         <div class="inner">
-            <div class="text-center">
-                <ul class="stats_box">
-                    <li>
-                        <div class="sparkline bar_week"></div>
-                        <div class="stat_text">
-                            <strong>2.345</strong>Weekly Visit
-                            <span class="percent down"> <i class="fa fa-caret-down"></i> -16%</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="sparkline line_day"></div>
-                        <div class="stat_text">
-                            <strong>165</strong>Daily Visit
-                            <span class="percent up"> <i class="fa fa-caret-up"></i> +23%</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="sparkline pie_week"></div>
-                        <div class="stat_text">
-                            <strong>$2 345.00</strong>Weekly Sale
-                            <span class="percent"> 0%</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="sparkline stacked_month"></div>
-                        <div class="stat_text">
-                            <strong>$678.00</strong>Monthly Sale
-                            <span class="percent down"> <i class="fa fa-caret-down"></i> -10%</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <div class="text-center">
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-bolt fa-2x"></i>
-                    <span>default</span>
-                    <span class="label label-default">2</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-check fa-2x"></i>
-                    <span>danger</span>
-                    <span class="label label-danger">2</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-building-o fa-2x"></i>
-                    <span>No Label</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-envelope fa-2x"></i>
-                    <span>success</span>
-                    <span class="label label-success">-456</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-signal fa-2x"></i>
-                    <span>warning</span>
-                    <span class="label label-warning">+25</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-external-link fa-2x"></i>
-                    <span>π</span>
-                    <span class="label btn-metis-2">3.14159265</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-lemon-o fa-2x"></i>
-                    <span>é</span>
-                    <span class="label btn-metis-4">2.71828</span>
-                </a>
-                <a class="quick-btn" href="#">
-                    <i class="fa fa-glass fa-2x"></i>
-                    <span>φ</span>
-                    <span class="label btn-metis-3">1.618</span>
-                </a>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="box">
-                        <header>
-                            <h5>Line Chart</h5>
-                        </header>
-                        <div class="body" id="trigo" style="height: 250px;"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="body">
-                            <table class="table table-condensed table-hovered sortableTable">
-                                <thead>
-                                <tr>
-                                    <th>Country
-                                        <i class="fa fa-sort"></i>
-                                        <i class="fa fa-sort-asc"></i>
-                                        <i class="fa fa-sort-desc"></i>
-                                    </th>
-                                    <th>Visit
-                                        <i class="fa fa-sort"></i>
-                                        <i class="fa fa-sort-asc"></i>
-                                        <i class="fa fa-sort-desc"></i>
-                                    </th>
-                                    <th>Time
-                                        <i class="fa fa-sort"></i>
-                                        <i class="fa fa-sort-asc"></i>
-                                        <i class="fa fa-sort-desc"></i>
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="active">
-                                    <td>Andorra</td>
-                                    <td>1126</td>
-                                    <td>00:00:15</td>
-                                </tr>
-                                <tr>
-                                    <td>Belarus</td>
-                                    <td>350</td>
-                                    <td>00:01:20</td>
-                                </tr>
-                                <tr class="danger">
-                                    <td>Paraguay</td>
-                                    <td>43</td>
-                                    <td>00:00:30</td>
-                                </tr>
-                                <tr class="warning">
-                                    <td>Malta</td>
-                                    <td>547</td>
-                                    <td>00:10:20</td>
-                                </tr>
-                                <tr>
-                                    <td>Australia</td>
-                                    <td>560</td>
-                                    <td>00:00:10</td>
-                                </tr>
-                                <tr>
-                                    <td>Kenya</td>
-                                    <td>97</td>
-                                    <td>00:20:00</td>
-                                </tr>
-                                <tr class="success">
-                                    <td>Italy</td>
-                                    <td>2450</td>
-                                    <td>00:10:00</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="box">
-                        <header>
-                            <h5>Calendar</h5>
-                        </header>
-                        <div id="calendar_content" class="body">
-                            <div id='calendar'></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id=context></div>
         </div>
-
-        <!-- end .inner -->
     </div>
 
-    <!-- end .outer -->
+    <!-- end .inner -->
+</div>
+
+<!-- end .outer -->
 </div>
 
 <!-- end #content -->
 </div><!-- /#wrap -->
 <div id="footer">
-    <p>2013 &copy; Metis Admin</p>
+    <p>2013 &copy; BS Admin</p>
 </div>
 
 <!-- #helpModal -->
@@ -569,17 +275,17 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal --><!-- /#helpModal -->
-<script src="./../../assets/lib/jquery.min.js"></script>
-<script src="./../../assets/lib/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./../../assets/js/style-switcher.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="./../../assets/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.min.js"></script>
-<script src="./../../assets/lib/tablesorter/js/jquery.tablesorter.min.js"></script>
-<script src="./../../assets/lib/sparkline/jquery.sparkline.min.js"></script>
-<script src="./../../assets/lib/flot/jquery.flot.js"></script>
-<script src="./../../assets/lib/flot/jquery.flot.selection.js"></script>
-<script src="./../../assets/lib/flot/jquery.flot.resize.js"></script>
-<script src="./../../assets/js/main.min.js"></script>
+<script src="./../../../assets/lib/jquery.min.js"></script>
+<script src="./../../../assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<%--<script type="text/javascript" src="./../../../assets/js/style-switcher.js"></script>--%>
+<%--<script src="./../../../assets/lib/fullcalendar-1.6.2/fullcalendar/fullcalendar.min.js"></script>--%>
+<%--<script src="./../../../assets/lib/tablesorter/js/jquery.tablesorter.min.js"></script>--%>
+<%--<script src="./../../../assets/lib/sparkline/jquery.sparkline.min.js"></script>--%>
+<%--<script src="./../../../assets/lib/flot/jquery.flot.js"></script>--%>
+<%--<script src="./../../../assets/lib/flot/jquery.flot.selection.js"></script>--%>
+<%--<script src="./../../../assets/lib/flot/jquery.flot.resize.js"></script>--%>
+<script src="./../../../assets/js/main.min.js"></script>
+<script src="./../../../assets/js/include.js"></script>
 <script>
     $(function() {
         dashboard();

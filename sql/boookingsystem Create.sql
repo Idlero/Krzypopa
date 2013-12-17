@@ -263,7 +263,7 @@ ADD CONSTRAINT `FKAddition128534` FOREIGN KEY (`Roomid`) REFERENCES `room` (`id`
 --
 -- Ograniczenia dla tabeli `client_hotel`
 --
-ALTER TABLE `client_hotel`
+ALTER TABLE hotel_client
 ADD CONSTRAINT `FKClient_Hot294122` FOREIGN KEY (`Hotelid`) REFERENCES `hotel` (`id`),
 ADD CONSTRAINT `FKClient_Hot718968` FOREIGN KEY (`Clientid`) REFERENCES `client` (`id`);
 

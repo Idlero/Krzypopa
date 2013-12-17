@@ -1,11 +1,22 @@
 /**
-* Bootstrap-Admin-Template by onokumus@gmail.com
-* Version : 2.1.2 
-* Author : Osman Nuri Okumuş 
-* Copyright 2013
-*/
+ * Bootstrap-Admin-Template by onokumus@gmail.com
+ * Version : 2.1.2
+ * Author : Osman Nuri Okumuş
+ * Copyright 2013
+ */
 $(function () {
     "use strict";
+
+    var currentdate = new Date();
+    var datetime = "" + currentdate.getDate() + "/"
+        + (currentdate.getMonth() + 1) + "/"
+        + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":"
+        + currentdate.getSeconds();
+    $('.current-date').text(datetime);
+
+
 
     $('a[href=#]').on('click', function (e) {
         e.preventDefault();
@@ -36,9 +47,9 @@ $(function () {
     $('li.accordion-group > a').on('click', function (e) {
         $(this).children('span').children('i').toggleClass('icon-angle-down');
     });
-    
+
     $('#menu').metisMenu();
-    
+
 });
 function metisButton() {
     window.prettyPrint && prettyPrint();
@@ -226,18 +237,18 @@ function dashboard() {
         },
         selectable: true,
         selectHelper: true,
-        select: function(start, end, allDay) {
+        select: function (start, end, allDay) {
             var title = prompt('Event Title:');
             if (title) {
                 calendar.fullCalendar('renderEvent',
-                        {
-                            title: title,
-                            start: start,
-                            end: end,
-                            allDay: allDay
-                        },
-                true // make the event "stick"
-                        );
+                    {
+                        title: title,
+                        start: start,
+                        end: end,
+                        allDay: allDay
+                    },
+                    true // make the event "stick"
+                );
             }
             calendar.fullCalendar('unselect');
         },
@@ -297,7 +308,6 @@ function dashboard() {
     /*----------- END FULLCALENDAR CODE -------------------------*/
 
 
-
     /*----------- BEGIN CHART CODE -------------------------*/
     var sin = [], cos = [];
     for (var i = 0; i < 14; i += 0.5) {
@@ -306,43 +316,43 @@ function dashboard() {
     }
 
     var plot = $.plot($("#trigo"),
-            [
-                {
-                    data: sin,
-                    label: "sin(x)",
-                    points: {
-                        fillColor: "#4572A7",
-                        size: 5
-                    },
-                    color: '#4572A7'
+        [
+            {
+                data: sin,
+                label: "sin(x)",
+                points: {
+                    fillColor: "#4572A7",
+                    size: 5
                 },
-                {
-                    data: cos,
-                    label: "cos(x)",
-                    points: {
-                        fillColor: "#333",
-                        size: 35
-                    },
-                    color: '#AA4643'
-                }
-            ], {
-        series: {
-            lines: {
-                show: true
+                color: '#4572A7'
             },
-            points: {
-                show: true
+            {
+                data: cos,
+                label: "cos(x)",
+                points: {
+                    fillColor: "#333",
+                    size: 35
+                },
+                color: '#AA4643'
             }
-        },
-        grid: {
-            hoverable: true,
-            clickable: true
-        },
-        yaxis: {
-            min: -1.2,
-            max: 1.2
-        }
-    });
+        ], {
+            series: {
+                lines: {
+                    show: true
+                },
+                points: {
+                    show: true
+                }
+            },
+            grid: {
+                hoverable: true,
+                clickable: true
+            },
+            yaxis: {
+                min: -1.2,
+                max: 1.2
+            }
+        });
 
     function showTooltip(x, y, contents) {
         $('<div id="tooltip">' + contents + '</div>').css({
@@ -358,7 +368,7 @@ function dashboard() {
     }
 
     var previousPoint = null;
-    $("#trigo").bind("plothover", function(event, pos, item) {
+    $("#trigo").bind("plothover", function (event, pos, item) {
         $("#x").text(pos.x.toFixed(2));
         $("#y").text(pos.y.toFixed(2));
 
@@ -368,10 +378,10 @@ function dashboard() {
 
                 $("#tooltip").remove();
                 var x = item.datapoint[0].toFixed(2),
-                        y = item.datapoint[1].toFixed(2);
+                    y = item.datapoint[1].toFixed(2);
 
                 showTooltip(item.pageX, item.pageY,
-                        item.series.label + " of " + x + " = " + y);
+                    item.series.label + " of " + x + " = " + y);
             }
         }
         else {
@@ -449,7 +459,7 @@ function formGeneral() {
     });
     $('#cp2').colorpicker();
     $('#cp3').colorpicker();
-    $('#cp4').colorpicker().on('changeColor', function(ev) {
+    $('#cp4').colorpicker().on('changeColor', function (ev) {
         $('#colorPickerBlock').css('background-color', ev.color.toHex());
     });
     /*----------- END colorpicker CODE -------------------------*/
@@ -468,46 +478,46 @@ function formGeneral() {
     var startDate = new Date(2012, 1, 20);
     var endDate = new Date(2012, 1, 25);
     $('#dp4').datepicker()
-            .on('changeDate', function(ev) {
-        if (ev.date.valueOf() > endDate.valueOf()) {
-            $('#alert').show().find('strong').text('The start date can not be greater then the end date');
-        } else {
-            $('#alert').hide();
-            startDate = new Date(ev.date);
-            $('#startDate').text($('#dp4').data('date'));
-        }
-        $('#dp4').datepicker('hide');
-    });
+        .on('changeDate', function (ev) {
+            if (ev.date.valueOf() > endDate.valueOf()) {
+                $('#alert').show().find('strong').text('The start date can not be greater then the end date');
+            } else {
+                $('#alert').hide();
+                startDate = new Date(ev.date);
+                $('#startDate').text($('#dp4').data('date'));
+            }
+            $('#dp4').datepicker('hide');
+        });
     $('#dp5').datepicker()
-            .on('changeDate', function(ev) {
-        if (ev.date.valueOf() < startDate.valueOf()) {
-            $('#alert').show().find('strong').text('The end date can not be less then the start date');
-        } else {
-            $('#alert').hide();
-            endDate = new Date(ev.date);
-            $('#endDate').text($('#dp5').data('date'));
-        }
-        $('#dp5').datepicker('hide');
-    });
+        .on('changeDate', function (ev) {
+            if (ev.date.valueOf() < startDate.valueOf()) {
+                $('#alert').show().find('strong').text('The end date can not be less then the start date');
+            } else {
+                $('#alert').hide();
+                endDate = new Date(ev.date);
+                $('#endDate').text($('#dp5').data('date'));
+            }
+            $('#dp5').datepicker('hide');
+        });
     /*----------- END datepicker CODE -------------------------*/
 
     /*----------- BEGIN daterangepicker CODE -------------------------*/
     $('#reservation').daterangepicker();
 
     $('#reportrange').daterangepicker(
-            {
-                ranges: {
-                    'Today': [moment(), moment()],
-                    'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-                    'Last 7 Days': [moment().subtract('days', 6), moment()],
-                    'Last 30 Days': [moment().subtract('days', 29), moment()],
-                    'This Month': [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
-                }
-            },
-    function(start, end) {
-        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-    }
+        {
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                'Last 7 Days': [moment().subtract('days', 6), moment()],
+                'Last 30 Days': [moment().subtract('days', 29), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+            }
+        },
+        function (start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
     );
     /*----------- END daterangepicker CODE -------------------------*/
 
@@ -523,13 +533,13 @@ function formGeneral() {
 
     /*----------- BEGIN toggleButtons CODE -------------------------*/
     // Resets to the regular style
-$('#dimension-switch').bootstrapSwitch('setSizeClass', '');
+    $('#dimension-switch').bootstrapSwitch('setSizeClass', '');
 // Sets a mini switch
-$('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-mini');
+    $('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-mini');
 // Sets a small switch
-$('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-small');
+    $('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-small');
 // Sets a large switch
-$('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-large');
+    $('#dimension-switch').bootstrapSwitch('setSizeClass', 'switch-large');
     /*----------- END toggleButtons CODE -------------------------*/
 
     /*----------- BEGIN dualListBox CODE -------------------------*/
@@ -587,10 +597,10 @@ function formValidation() {
         },
         errorClass: 'help-block col-lg-6',
         errorElement: 'span',
-        highlight: function(element, errorClass, validClass) {
+        highlight: function (element, errorClass, validClass) {
             $(element).parents('.form-group').removeClass('has-success').addClass('has-error');
         },
-        unhighlight: function(element, errorClass, validClass) {
+        unhighlight: function (element, errorClass, validClass) {
             $(element).parents('.form-group').removeClass('has-error').addClass('has-success');
         }
     });
@@ -632,10 +642,10 @@ function formValidation() {
         },
         errorClass: 'help-block',
         errorElement: 'span',
-        highlight: function(element, errorClass, validClass) {
+        highlight: function (element, errorClass, validClass) {
             $(element).parents('.form-group').removeClass('has-success').addClass('has-error');
         },
-        unhighlight: function(element, errorClass, validClass) {
+        unhighlight: function (element, errorClass, validClass) {
             $(element).parents('.form-group').removeClass('has-error').addClass('has-success');
         }
     });
@@ -669,7 +679,7 @@ function formWizard() {
         validationEnabled: true,
         focusFirstInput: true,
         formOptions: {
-            beforeSubmit: function(data) {
+            beforeSubmit: function (data) {
                 $.gritter.add({
                     // (string | mandatory) the heading of the notification
                     title: 'data sent to the server',
@@ -711,10 +721,10 @@ function formWizard() {
             },
             errorClass: 'help-block',
             errorElement: 'span',
-            highlight: function(element, errorClass, validClass) {
+            highlight: function (element, errorClass, validClass) {
                 $(element).parents('.form-group').removeClass('has-success').addClass('has-error');
             },
-            unhighlight: function(element, errorClass, validClass) {
+            unhighlight: function (element, errorClass, validClass) {
                 $(element).parents('.form-group').removeClass('has-error').addClass('has-success');
             }
         }
@@ -739,7 +749,7 @@ function formWysiwyg() {
     editor = $("#cleditor").cleditor({width: "100%", height: "100%"})[0].focus();
     $(window).resize();
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         var $win = $('#cleditorDiv');
         $("#cleditor").width($win.width() - 24).height($win.height() - 24).offset({
             left: 15,
@@ -766,10 +776,9 @@ function metisCalendar() {
         hdr = {left: '', center: 'title', right: 'prev,today,month,agendaWeek,agendaDay,next'};
     }
 
-    var initDrag = function(e) {
+    var initDrag = function (e) {
         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
         // it doesn't need to have a start or end
-
 
 
         var eventObject = {
@@ -788,7 +797,7 @@ function metisCalendar() {
         });
     };
 
-    var addEvent = function(title, priority) {
+    var addEvent = function (title, priority) {
         title = title.length === 0 ? "Untitled Event" : title;
 
         priority = priority.length === 0 ? "label label-default" : priority;
@@ -802,11 +811,11 @@ function metisCalendar() {
     /* initialize the external events
      -----------------------------------------------------------------*/
 
-    $('#external-events li.external-event').each(function() {
+    $('#external-events li.external-event').each(function () {
         initDrag($(this));
     });
 
-    $('#add-event').click(function() {
+    $('#add-event').click(function () {
         var title = $('#title').val();
         var priority = $('input:radio[name=priority]:checked').val();
 
@@ -823,7 +832,7 @@ function metisCalendar() {
         },
         editable: true,
         droppable: true, // this allows things to be dropped onto the calendar !!!
-        drop: function(date, allDay) { // this function is called when something is dropped
+        drop: function (date, allDay) { // this function is called when something is dropped
 
             // retrieve the dropped element's stored Event Object
             var originalEventObject = $(this).data('eventObject');
@@ -847,7 +856,7 @@ function metisCalendar() {
             }
 
         },
-        windowResize: function(event, ui) {
+        windowResize: function (event, ui) {
             $('#calendar').fullCalendar('render');
         }
     });
@@ -858,7 +867,7 @@ function metisFile() {
     /*----------- BEGIN elfinder CODE -------------------------*/
     var elf = $('#elfinder').elfinder({
         url: 'assets/elfinder-2.0-rc1/php/connector.php'  // connector URL (REQUIRED)
-                // lang: 'de',             // language (OPTIONAL)
+        // lang: 'de',             // language (OPTIONAL)
     }).elfinder('instance');
     /*----------- END elfinder CODE -------------------------*/
 
@@ -866,7 +875,7 @@ function metisFile() {
 function metisMaps() {
     "use strict";
 
-    var map1, map2, map3, map4, map5, map6, path,addressMap;
+    var map1, map2, map3, map4, map5, map6, path, addressMap;
 
     map1 = new GMaps({
         el: '#gmaps-basic',
@@ -896,12 +905,12 @@ function metisMaps() {
             database_id: 42,
             author: 'HPNeo'
         },
-        click: function(e) {
+        click: function (e) {
             if (console.log)
                 console.log(e);
             alert('You clicked in this marker');
         },
-        mouseover: function(e) {
+        mouseover: function (e) {
             if (console.log)
                 console.log(e);
         }
@@ -922,16 +931,16 @@ function metisMaps() {
     });
 
     GMaps.geolocate({
-        success: function(position) {
+        success: function (position) {
             map3.setCenter(position.coords.latitude, position.coords.longitude);
         },
-        error: function(error) {
+        error: function (error) {
             alert('Geolocation failed: ' + error.message);
         },
-        not_supported: function() {
+        not_supported: function () {
             alert("Your browser does not support geolocation");
         },
-        always: function() {
+        always: function () {
             //alert("Done!");
         }
     });
@@ -940,12 +949,21 @@ function metisMaps() {
         el: '#gmaps-polylines',
         lat: -12.043333,
         lng: -77.028333,
-        click: function(e) {
+        click: function (e) {
             console.log(e);
         }
     });
 
-    path = [[-12.044012922866312, -77.02470665341184], [-12.05449279282314, -77.03024273281858], [-12.055122327623378, -77.03039293652341], [-12.075917129727586, -77.02764635449216], [-12.07635776902266, -77.02792530422971], [-12.076819390363665, -77.02893381481931], [-12.088527520066453, -77.0241058385925], [-12.090814532191756, -77.02271108990476]];
+    path = [
+        [-12.044012922866312, -77.02470665341184],
+        [-12.05449279282314, -77.03024273281858],
+        [-12.055122327623378, -77.03039293652341],
+        [-12.075917129727586, -77.02764635449216],
+        [-12.07635776902266, -77.02792530422971],
+        [-12.076819390363665, -77.02893381481931],
+        [-12.088527520066453, -77.0241058385925],
+        [-12.090814532191756, -77.02271108990476]
+    ];
 
     map4.drawPolyline({
         path: path,
@@ -973,11 +991,11 @@ function metisMaps() {
         lat: -12.043333,
         lng: -77.028333
     });
-    $('#geocoding_form').submit(function(e) {
+    $('#geocoding_form').submit(function (e) {
         e.preventDefault();
         GMaps.geocode({
             address: $('#address').val().trim(),
-            callback: function(results, status) {
+            callback: function (results, status) {
                 if (status === 'OK') {
                     var latlng = results[0].geometry.location;
                     addressMap.setCenter(latlng.lat(), latlng.lng());
@@ -991,13 +1009,14 @@ function metisMaps() {
     });
 
 }
-;(function ($, window, document, undefined) {
+;
+(function ($, window, document, undefined) {
 
     var pluginName = "metisMenu",
         defaults = {
             toggle: true
         };
-        
+
     function Plugin(element, options) {
         this.element = element;
         this.settings = $.extend({}, defaults, options);
@@ -1037,11 +1056,11 @@ function metisMaps() {
 
 })(jQuery, window, document);
 function metisSortable() {
-    
-  $('.inner .row').sortable({
-    
-  });
-  
+
+    $('.inner .row').sortable({
+
+    });
+
 }
 
 function metisTable() {
@@ -1063,22 +1082,22 @@ function metisTable() {
     /*----------- END datatable CODE -------------------------*/
 
     /*----------- BEGIN action table CODE -------------------------*/
-    $('#actionTable button.remove').on('click', function() {
+    $('#actionTable button.remove').on('click', function () {
         $(this).closest('tr').remove();
     });
-    $('#actionTable button.edit').on('click', function() {
+    $('#actionTable button.edit').on('click', function () {
         $('#editModal').modal({
             show: true
         });
         var val1 = $(this).closest('tr').children('td').eq(1),
-                val2 = $(this).closest('tr').children('td').eq(2),
-                val3 = $(this).closest('tr').children('td').eq(3);
+            val2 = $(this).closest('tr').children('td').eq(2),
+            val3 = $(this).closest('tr').children('td').eq(3);
         $('#editModal #fName').val(val1.html());
         $('#editModal #lName').val(val2.html());
         $('#editModal #uName').val(val3.html());
 
 
-        $('#editModal #sbmtBtn').on('click', function() {
+        $('#editModal #sbmtBtn').on('click', function () {
             val1.html($('#editModal #fName').val());
             val2.html($('#editModal #lName').val());
             val3.html($('#editModal #uName').val());
@@ -1088,16 +1107,16 @@ function metisTable() {
     /*----------- END action table CODE -------------------------*/
 
 }
-function metisPricing(){
-  $("#dark-toggle label").on("click", function(){	      
-		var $this = $(this);
-		$("ul.dark li.active").removeClass("primary success danger warning info default").addClass($this.find("input").val());
-	      });
-	      
-	      $("#light-toggle label").on("click", function(){	      
-		var $this = $(this);
-		$("ul#light li.active").removeClass("primary success danger warning info default").addClass($this.find("input").val());
-	      });
+function metisPricing() {
+    $("#dark-toggle label").on("click", function () {
+        var $this = $(this);
+        $("ul.dark li.active").removeClass("primary success danger warning info default").addClass($this.find("input").val());
+    });
+
+    $("#light-toggle label").on("click", function () {
+        var $this = $(this);
+        $("ul#light li.active").removeClass("primary success danger warning info default").addClass($this.find("input").val());
+    });
 };
 function progRess() {
 
