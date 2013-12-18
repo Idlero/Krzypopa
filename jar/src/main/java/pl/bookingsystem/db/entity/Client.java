@@ -38,7 +38,7 @@ public class Client implements Serializable {
     @Column(name = "phone_number", nullable = false)
     private String phone_number;
 
-    @Column(name = "password", nullable = false)
+    @Column(name = "pass", nullable = false)
     private String password;
 
     @OneToOne(cascade = CascadeType.ALL)

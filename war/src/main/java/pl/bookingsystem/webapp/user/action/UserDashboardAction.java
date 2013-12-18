@@ -6,7 +6,7 @@ import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.ResultPath;
 
-@Namespace("/modules/user")
+@Namespace("/")
 @ResultPath(value = "/")
 public class UserDashboardAction extends ActionSupport {
 
@@ -22,7 +22,7 @@ public class UserDashboardAction extends ActionSupport {
     }
 
     @Action(value = "dashboard", results = {
-            @Result(name = "success", location = "pages/dashboard.jsp")
+            @Result(name = "success", location = "/modules/user/pages/dashboard.jsp")
     })
     public String execute() {
 

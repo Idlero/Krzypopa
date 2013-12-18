@@ -7,9 +7,9 @@
     <title>Login Page</title>
     <meta name="msapplication-TileColor" content="#5bc0de" />
     <meta name="msapplication-TileImage" content="assets/img/metis-tile.png" />
-    <link rel="stylesheet" href="./../../assets/lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./../../assets/css/main.css">
-    <link rel="stylesheet" href="./../../assets/lib/magic/magic.css">
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/lib/magic/magic.css">
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -29,11 +29,11 @@
 <body class="login">
 <div class="container">
     <div class="text-center">
-        <img src="./../../assets/img/logo.png" alt="Metis Logo">
+        <img src="./assets/img/logo.png" alt="Metis Logo">
     </div>
     <div class="tab-content">
         <div id="login" class="tab-pane active">
-            <s:form action="login" cssClass="form-signin">
+            <s:form action="dashboard" cssClass="form-signin">
                 <p class="text-muted text-center">
                     Enter your username and password
                 </p>
@@ -67,8 +67,8 @@
         </ul>
     </div>
 </div><!-- /container -->
-<script src="./../../assets/lib/jquery.min.js"></script>
-<script src="./../../assets/lib/bootstrap/js/bootstrap.js"></script>
+<script src="./assets/lib/jquery.min.js"></script>
+<script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
 <script>
     $('.list-inline li > a').click(function() {
         var activeForm = $(this).attr('href') + ' > form';

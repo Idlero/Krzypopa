@@ -31,14 +31,14 @@ public class User implements Serializable {
     @Column(name = "phone_number")
     private String phone_number;
 
-    @Column(name = "password")
+    @Column(name = "pass")
     private String password;
 
     public enum Type {
         ADMIN, OWNER, EMPLOYEE
     }
 
-    @Column(name = "type", columnDefinition="enum('ADMIN','OWNER','EMPLOYEE')")
+    @Column(name = "user_type", columnDefinition="enum('ADMIN','OWNER','EMPLOYEE')")
     @Enumerated(EnumType.STRING)
     private Type type;
 

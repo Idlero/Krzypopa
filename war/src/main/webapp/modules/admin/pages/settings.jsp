@@ -6,7 +6,7 @@
 <h1>Admin Dashboard - Settings</h1>
 
 
-<s:form action="change">
+<s:form action="dashboard">
     <s:textfield name="username" value="%{#session['username']}" label="Change Username"/>
     <s:password name="oldPassword" value="" label="Current Password"/>
     <s:password name="newPassword" value="" label="New Password"/>

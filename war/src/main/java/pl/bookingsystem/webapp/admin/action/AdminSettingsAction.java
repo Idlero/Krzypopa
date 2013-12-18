@@ -10,7 +10,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import java.util.Map;
 
-@Namespace("/modules/admin")
+@Namespace("/")
 @ResultPath(value = "/")
 public class AdminSettingsAction extends ActionSupport implements ApplicationAware, SessionAware {
 
@@ -22,10 +22,8 @@ public class AdminSettingsAction extends ActionSupport implements ApplicationAwa
     private String oldPassword;
     private String newPassword;
 
-    @Action(value = "change", results = {
-            @Result(name = "success", type = "chain", params = {
-                    "actionName", "dashboard", "namespace", "/modules/admin"
-            })
+    @Action(value = "dashboard", results = {
+            @Result(name = "success", location = "/modules/admin/pages/dashboard.jsp")
     })
     public String change() {
         if (oldPassword.equals(application.get("password"))) {
