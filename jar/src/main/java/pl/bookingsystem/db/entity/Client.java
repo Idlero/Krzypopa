@@ -2,14 +2,9 @@ package pl.bookingsystem.db.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-
-/**
- * Created with IntelliJ IDEA.
- * User: thx-
- * Date: 14.12.13
- * Time: 11:28
- * To change this template use File | Settings | File Templates.
- */
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "Client")
@@ -17,7 +12,7 @@ public class Client implements Serializable {
 
     @Column(name = "id")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY/*GenerationType.AUTO*/)
     private Long id;
 
     @Column(name = "first_name", nullable = false)
@@ -44,19 +39,40 @@ public class Client implements Serializable {
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
-/*
-   // @OneToMany(mappedBy = "reservation")
-    private Set<Reservation> reservations;
-
-    @ManyToMany (fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
-    private Set<Hotel> id_hotel = new HashSet<Hotel>();
-*/
+    @Column(name = "register_date")
+    private Date register_date;
 
 
-    public Client() {
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "client")
+   private Set<Reservation> reservations;
+
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "clients")
+    private Set<Hotel> hotels = new HashSet<Hotel>();
+
+    public Client(String first_name, String last_name, Long pesel, String email, String phone_number, String password, Address address, Date register_date) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.pesel = pesel;
+        this.email = email;
+        this.phone_number = phone_number;
+        this.password = password;
+        this.address = address;
+        this.register_date = register_date;
     }
 
-    public Client(String first_name, String last_name, Long pesel, Long nip, String email, String phone_number, String password, Address address) {
+    public Client(String first_name, String last_name, Long pesel, String email, String phone_number, String password, Address address, Date register_date, Long nip) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.pesel = pesel;
+        this.email = email;
+        this.phone_number = phone_number;
+        this.password = password;
+        this.address = address;
+        this.register_date = register_date;
+        this.nip = nip;
+    }
+
+    public Client(String first_name, String last_name, Long pesel, Long nip, String email, String phone_number, String password, Address address, Date register_date, Set<Reservation> reservations, Set<Hotel> hotels) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.pesel = pesel;
@@ -65,6 +81,12 @@ public class Client implements Serializable {
         this.phone_number = phone_number;
         this.password = password;
         this.address = address;
+        this.register_date = register_date;
+        this.reservations = reservations;
+        this.hotels = hotels;
+    }
+
+    public Client() {
     }
 
     public Long getId() {

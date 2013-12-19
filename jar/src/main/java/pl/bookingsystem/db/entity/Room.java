@@ -12,13 +12,13 @@ import java.util.Set;
 public class Room implements Serializable {
 
 
-    @Column(name = "id_room", unique = true)
+    @Column(name = "id", unique = true)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "no_room")
-    private Long no_room;
+    @Column(name = "room_no")
+    private Integer no_room;
 
     @Column(name = "name", unique = true)
     private String name;
@@ -27,10 +27,10 @@ public class Room implements Serializable {
     private String bed;
 
     @Column(name = "capacity")
-    private Long capacity;
+    private Integer capacity;
 
-    @ManyToOne
-    @JoinColumn(name = "Hotelid")
+    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @JoinColumn(name = "hotel_id")
     private Hotel hotel;
 
     @OneToMany(mappedBy = "room")
@@ -38,8 +38,25 @@ public class Room implements Serializable {
 
     @ManyToMany(mappedBy = "rooms")
     private Set<Reservation> reservations = new HashSet<Reservation>();
+    //TODO: add Price field   ?
 
-    public Room(Long no_room, String name, String bed, Long capacity, Hotel hotel) { //Tworzenie nowego pokoju
+    public Room() {
+    }
+
+    /**
+     * Constructor without reservation, addidtions and hotel
+     */
+    public Room(Integer no_room, String name, String bed, Integer capacity) {
+        this.no_room = no_room;
+        this.name = name;
+        this.bed = bed;
+        this.capacity = capacity;
+    }
+
+    /**
+     * Constructor without reservation and addidtions
+     */
+    public Room(Integer no_room, String name, String bed, Integer capacity, Hotel hotel) {
         this.no_room = no_room;
         this.name = name;
         this.bed = bed;
@@ -47,15 +64,24 @@ public class Room implements Serializable {
         this.hotel = hotel;
     }
 
-    public Long getId() {
-        return id;
+    /**
+     * Constructor with all fields
+     */
+    public Room(Integer no_room, String name, String bed, Integer capacity, Hotel hotel, Set<Addition> additions) {
+        this.no_room = no_room;
+        this.name = name;
+        this.bed = bed;
+        this.capacity = capacity;
+        this.hotel = hotel;
+        this.additions = additions;
     }
 
-    public Long getNo_room() {
+
+    public Integer getNo_room() {
         return no_room;
     }
 
-    public void setNo_room(Long no_room) {
+    public void setNo_room(Integer no_room) {
         this.no_room = no_room;
     }
 
@@ -75,11 +101,11 @@ public class Room implements Serializable {
         this.bed = bed;
     }
 
-    public Long getCapacity() {
+    public Integer getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(Long capacity) {
+    public void setCapacity(Integer capacity) {
         this.capacity = capacity;
     }
 
@@ -103,13 +129,15 @@ public class Room implements Serializable {
         return reservations;
     }
 
-    public void setReservations(Reservation reservations) {
-        this.reservations.add(reservations);
+    public void setReservations(Set<Reservation> reservations) {
+        this.reservations = reservations;
+    }
+    public Long getId() {
+        return id;
     }
 
-    public void setAdditions(Addition additions) {
-        this.additions.add(additions);
+    public void setId(Long id) {
+        this.id = id;
     }
-
 }
 

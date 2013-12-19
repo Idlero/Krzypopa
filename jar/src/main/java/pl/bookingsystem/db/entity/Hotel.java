@@ -13,13 +13,13 @@ public class Hotel implements Serializable {
 
     @Column(name = "id", unique = true)
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY/*GenerationType.AUTO*/)
     private Long id;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "description")
+    @Column(name = "description", nullable = true)
     private String description;
 
     @Column(name = "phone_number")
@@ -28,35 +28,70 @@ public class Hotel implements Serializable {
     @Column(name = "email")
     private String email;
 
-    @OneToOne(mappedBy = "hotel", cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
-    @JoinTable(name = "client_hotel",
-            joinColumns = {@JoinColumn(name = "Hotelid")},
-            inverseJoinColumns = {@JoinColumn(name = "Clientid")}
-    )
-    private Set<Client> client_id = new HashSet<Client>();
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "hotel_client", joinColumns = {
+            @JoinColumn(name = "hotel_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "client_id",
+                    nullable = false, updatable = false)})
+    private Set<Client> clients = new HashSet<Client>();
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(name = "hotel_user",
-            joinColumns = {@JoinColumn(name = "Hotelid")},
-            inverseJoinColumns = {@JoinColumn(name = "Userid")})
+    @JoinTable(name = "hotel_user", joinColumns = {
+            @JoinColumn(name = "hotel_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "user_id",
+                    nullable = false, updatable = false)})
     private Set<User> users = new HashSet<User>();
 
-    @OneToMany(mappedBy = "rooms")
-    private Set<Room> rooms;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "hotel", cascade = CascadeType.ALL)
+    private Set<Room> rooms = new HashSet<Room>();
 
 
-    public Hotel(String name, String description, String phone_number, String email) {
+    public void addRoom(Room room){
+        this.rooms.add(room);
+    }
+
+    public Hotel(String name, String phone_number, String email, Address address, Set<Client> clients, Set<User> users) {
+        this.name = name;
+        this.phone_number = phone_number;
+        this.email = email;
+        this.address = address;
+        this.clients = clients;
+        this.users = users;
+    }
+
+    public Hotel(String name, String description, String phone_number, String email, Address address, Set<Client> clients, Set<User> users) {
         this.name = name;
         this.description = description;
         this.phone_number = phone_number;
         this.email = email;
+        this.address = address;
+        this.clients = clients;
+        this.users = users;
     }
+
+    public Hotel() {
+    }
+
+    public Hotel(String name, String phone_number, String email, Address address, Set<Client> clients, Set<User> users, HashSet<Room> rooms) {
+        this.name = name;
+        this.phone_number = phone_number;
+        this.email = email;
+        this.address = address;
+        this.clients = clients;
+        this.users = users;
+        this.rooms = rooms;
+    }
+
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -75,12 +110,12 @@ public class Hotel implements Serializable {
         this.description = description;
     }
 
-    public String getPhone_numnber() {
+    public String getPhone_number() {
         return phone_number;
     }
 
-    public void setPhone_numnber(String phone_numnber) {
-        this.phone_number = phone_numnber;
+    public void setPhone_number(String phone_number) {
+        this.phone_number = phone_number;
     }
 
     public String getEmail() {
@@ -90,11 +125,36 @@ public class Hotel implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-    /*    public String getAddress() {
+
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
-    }*/
+    }
+
+    public Set<Client> getClients() {
+        return clients;
+    }
+
+    public void setClients(Set<Client> clients) {
+        this.clients = clients;
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
+    public Set<Room> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(Set<Room> rooms) {
+        this.rooms = rooms;
+    }
 }

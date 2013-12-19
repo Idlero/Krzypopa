@@ -1,11 +1,10 @@
 package pl.bookingsystem.db.dao;
 
+import pl.bookingsystem.db.entity.Hotel;
+
 /**
- * Created with IntelliJ IDEA.
- * User: rastek
- * Date: 11.12.13
- * Time: 21:08
- * To change this template use File | Settings | File Templates.
+ * Author: rastek
+ * Date: 11.12.13 @ 21:08
  */
-public interface HotelDAO {
+public interface HotelDAO extends GenericDAO<Hotel, Long> {
 }

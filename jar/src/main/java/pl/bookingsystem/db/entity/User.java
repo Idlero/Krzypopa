@@ -2,6 +2,8 @@ package pl.bookingsystem.db.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "user")
@@ -42,12 +44,9 @@ public class User implements Serializable {
     @Enumerated(EnumType.STRING)
     private Type type;
 
-   /* private int permissionValue;
-    private transient Type permission;*/
 
-
-   /* @ManyToMany(mappedBy = "users")
-    private Set<Hotel> hotels = new HashSet<Hotel>();*/
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "users")
+    private Set<Hotel> hotels = new HashSet<Hotel>();
 
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;

@@ -15,8 +15,8 @@ public class Status implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "status_type")
+    private String type;
 
     @Column(name = "description")
     private String description;
@@ -24,16 +24,22 @@ public class Status implements Serializable {
     @OneToMany(mappedBy = "status")
     private Set<Reservation> reservations = new HashSet<Reservation>();
 
-    public Status(String name, String description) {
-        this.name = name;
+
+    public Status() {
+    }
+
+    public Status(String type, String description) {
+        this.type = type;
         this.description = description;
     }
 
-    public Status(String name, String description, Set<Reservation> reservations) {
-        this.name = name;
+    public Status(String type, String description, Set<Reservation> reservations) {
+        this.type = type;
         this.description = description;
         this.reservations = reservations;
     }
+
+
 
     public Set<Reservation> getReservations() {
         return reservations;
@@ -47,12 +53,12 @@ public class Status implements Serializable {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getType() {
+        return type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getDescription() {

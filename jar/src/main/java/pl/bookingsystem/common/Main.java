@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        AddToDB.addUser();
+        AddToDB.addHotel();
+//        AddToDB.addUser();
 
       /*  ClientDAO dao = new ClientDAOImpl();
 

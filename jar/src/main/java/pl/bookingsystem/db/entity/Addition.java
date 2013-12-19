@@ -21,7 +21,7 @@ public class Addition implements Serializable {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "Roomid")
+    @JoinColumn(name = "id", insertable = false, updatable = false)
     private Room room;
 
     public Addition(String name, String description) {
@@ -33,6 +33,9 @@ public class Addition implements Serializable {
         this.name = name;
         this.description = description;
         this.room = room;
+    }
+
+    public Addition() {
     }
 
     public Long getId() {

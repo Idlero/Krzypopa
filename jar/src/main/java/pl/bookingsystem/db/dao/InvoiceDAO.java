@@ -1,11 +1,10 @@
 package pl.bookingsystem.db.dao;
 
+import pl.bookingsystem.db.entity.Invoice;
+
 /**
- * Created with IntelliJ IDEA.
- * User: rastek
- * Date: 11.12.13
- * Time: 21:08
- * To change this template use File | Settings | File Templates.
+ * Author: rastek
+ * Date: 11.12.13 @ 21:08
  */
-public interface InvoiceDAO {
+public interface InvoiceDAO extends GenericDAO<Invoice, Long> {
 }

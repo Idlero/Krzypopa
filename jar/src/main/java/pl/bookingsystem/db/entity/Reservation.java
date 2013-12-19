@@ -33,24 +33,22 @@ public class Reservation implements Serializable {
     @Column(name = "date_edit")
     private Date date_edit;
 
-
-    @ManyToOne
-    @JoinColumn(name = "Clientid")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id", insertable = false, updatable = false)
     private Client client;
 
-    @ManyToOne
-    @JoinColumn(name = "Statusid")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id", insertable = false, updatable = false)
     private Status status;
-
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "room_reservation",
-            joinColumns = {@JoinColumn(name = "Reservationid", nullable = false)},
-            inverseJoinColumns = {@JoinColumn(name = "Roomid")})
+            joinColumns = {@JoinColumn(name = "room_id", nullable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "reservation_id")})
     private Set<Room> rooms = new HashSet<Room>();
 
-
-    private Status defaultStatus = new Status("Rezerwacja", "Rezerwacja bez potwierdzenia czy zaplaty");
+    public Reservation() {
+    }
 
     public Reservation(String name, Date date_from, Date date_to, Integer person_count, Date date_edit, Client client, Status status) {
         this.name = name;
@@ -69,12 +67,16 @@ public class Reservation implements Serializable {
         this.person_count = person_count;
         this.date_edit = date_edit;
         this.client = client;
-        this.status = defaultStatus;
+        this.status = new Status("Rezerwacja", "Rezerwacja bez potwierdzenia lub zaplaty");;
     }
 
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -97,7 +99,7 @@ public class Reservation implements Serializable {
         return date_to;
     }
 
-    public void setData_to(Date date_to) {
+    public void setDate_to(Date date_to) {
         this.date_to = date_to;
     }
 
@@ -131,6 +133,14 @@ public class Reservation implements Serializable {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public Set<Room> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(Set<Room> rooms) {
+        this.rooms = rooms;
     }
 }
 

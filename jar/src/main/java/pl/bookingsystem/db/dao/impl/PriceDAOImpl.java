@@ -1,13 +1,11 @@
 package pl.bookingsystem.db.dao.impl;
 
 import pl.bookingsystem.db.dao.PriceDAO;
+import pl.bookingsystem.db.entity.Price;
 
 /**
- * Created with IntelliJ IDEA.
- * User: rastek
- * Date: 11.12.13
- * Time: 21:10
- * To change this template use File | Settings | File Templates.
+ * Author: rastek
+ * Date: 11.12.13 @ 21:10
  */
-public class PriceDAOImpl implements PriceDAO {
+public class PriceDAOImpl extends GenericDAOImpl<Price, Long> implements PriceDAO {
 }

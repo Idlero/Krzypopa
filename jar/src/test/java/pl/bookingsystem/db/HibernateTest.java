@@ -15,7 +15,7 @@ public class HibernateTest {
     private ClientDAO clientManager;
     private Client client;
 
-
+/*
     @Before
     public void init() {
         clientManager = new ClientDAOImpl();
@@ -41,6 +41,6 @@ public class HibernateTest {
     public void cleanUp() {
         clientManager.delete(client);
         client = null;
-    }
+    }*/
 
 }

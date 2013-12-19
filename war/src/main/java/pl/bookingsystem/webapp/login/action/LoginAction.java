@@ -25,7 +25,7 @@ public class LoginAction extends ActionSupport implements SessionAware, Applicat
     @Action(value = "dashboard", results = {
             @Result(name = "userlogged", location = "/modules/user/pages/dashboard.jsp"),
             @Result(name = "adminlogged", location = "/modules/admin/pages/dashboard.jsp"),
-            @Result(name = "error", location = "/modules/login/pages/register_user.jsp")
+            @Result(name = "error", location = "/modules/login/pages/register_user.jsp")  //TODO: incorrect user or pass moze byc wyswietlany na tej samej stronie
     })
     public String execute() {
 

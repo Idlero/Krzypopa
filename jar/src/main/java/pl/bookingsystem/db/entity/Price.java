@@ -24,11 +24,14 @@ public class Price implements Serializable {
     @Column(name = "room_type")
     private String roomt_type;
 
-    @Column(name = "persone_type")
+    @Column(name = "person_type")
     private String prersone_type;
 
     @Column(name = "value")
     private Integer value;
+
+    public Price() {
+    }
 
     public Long getId() {
         return id;
