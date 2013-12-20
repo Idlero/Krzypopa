@@ -49,7 +49,8 @@ public class Hotel implements Serializable {
     private Set<Room> rooms = new HashSet<Room>();
 
 
-    public void addRoom(Room room){
+    public void addRoom(Room room) {
+        room.setHotel(this);
         this.rooms.add(room);
     }
 

@@ -17,9 +17,12 @@ public interface GenericDAO<T, ID extends Serializable> {
 
     List<T> selectMany(Query query);
 
+    List<T> selectMany(String hql);
+
     T selectOne(Query query);
 
-    T selectByID(Class clazz, ID id);
+    T selectOne(String hql);
 
+    T selectByID(Class clazz, ID id);
 
 }

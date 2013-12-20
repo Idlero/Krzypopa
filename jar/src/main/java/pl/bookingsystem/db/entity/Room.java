@@ -29,7 +29,7 @@ public class Room implements Serializable {
     @Column(name = "capacity")
     private Integer capacity;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "hotel_id")
     private Hotel hotel;
 
@@ -132,6 +132,7 @@ public class Room implements Serializable {
     public void setReservations(Set<Reservation> reservations) {
         this.reservations = reservations;
     }
+
     public Long getId() {
         return id;
     }
