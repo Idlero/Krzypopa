@@ -6,18 +6,17 @@ import pl.bookingsystem.db.dao.UserDAO;
 import pl.bookingsystem.db.dao.impl.HotelDAOImpl;
 import pl.bookingsystem.db.dao.impl.RoomDAOImpl;
 import pl.bookingsystem.db.dao.impl.UserDAOImpl;
-import pl.bookingsystem.db.entity.*;
+import pl.bookingsystem.db.entity.Address;
+import pl.bookingsystem.db.entity.Room;
+import pl.bookingsystem.db.entity.User;
 
-import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class AddToDB {
 
     public static void addHotel() {
         HotelDAO hotelManager = new HotelDAOImpl();
-        Address client_address = new Address("Wrocław", "Swidnicka", 120, 10, "44-450", "Polska");
+        /*Address client_address = new Address("Wrocław", "Swidnicka", 120, 10, "44-450", "Polska");
         Date register_date = new Date();
         Set<Client> clients = new HashSet<Client>();
         clients.add(new Client("Jan", "Nowak", 85010101234L, "jan.nowak@gmail.com", "791234123", "pass", client_address, register_date));
@@ -31,19 +30,29 @@ public class AddToDB {
         Hotel hotel = new Hotel("Hotel BLABLA", "+48 0123456789", "kontakt@hotelblabla.pl", hotel_address, clients, users);
         hotelManager.save(hotel);
 
-        hotel.addRoom(addRoom(hotel));
+        hotel.addRoom(addRoom(1));
+        hotel.addRoom(addRoom(2));
+        hotel.addRoom(addRoom(3));
         hotelManager.save(hotel);
 
         System.out.println("Rooms:");
         for (Room room : hotel.getRooms()) {
             System.out.println(room.getName());
+        }*/
+        RoomDAO roomManager = new RoomDAOImpl();
+        List<Room> hotelRooms = roomManager.selectMany("select hotel.rooms from Hotel hotel where hotel.id = 30");
+        System.out.println("Rooms:");
+        for (Room room : hotelRooms) {
+            System.out.println(room.getName() + " " + room.getHotel().getId());
         }
+
+
     }
 
-    public static Room addRoom(Hotel hotel) {
-        RoomDAO roomManager = new RoomDAOImpl();
-        Room room = new Room(1, "Pokoj goscinny nr 1", "2x1", 2, hotel);
-        roomManager.save(room);
+    public static Room addRoom(int no) {
+        // RoomDAO roomManager = new RoomDAOImpl();
+        Room room = new Room(1, "Pokoj goscinny nr " + no, "2x1", 2);
+        // roomManager.save(room);
         return room;
     }
 

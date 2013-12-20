@@ -32,21 +32,20 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <!-- Disable the second-level cache  -->
-        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <!--<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>-->
 
 
+        <mapping class="pl.bookingsystem.db.entity.Client"/>
+        <mapping class="pl.bookingsystem.db.entity.User"/>
+        <mapping class="pl.bookingsystem.db.entity.Address"/>
+        <mapping class="pl.bookingsystem.db.entity.Hotel"/>
+        <mapping class="pl.bookingsystem.db.entity.Room"/>
+        <mapping class="pl.bookingsystem.db.entity.Addition"/>
+        <mapping class="pl.bookingsystem.db.entity.Price"/>
+        <mapping class="pl.bookingsystem.db.entity.Reservation"/>
+        <mapping class="pl.bookingsystem.db.entity.Status"/>
+        <mapping class="pl.bookingsystem.db.entity.Invoice"/>
 
-        <!--  <mapping class="pl.bookingsystem.db.entity.Client"/>
-        <mapping class="pl.bookingsystem.db.entity.Additionn"/>
-         <mapping class="pl.bookingsystem.db.entity.Reservationn"/>
-         <mapping class="pl.bookingsystem.db.entity.Hotel"/>
-         <mapping class="pl.bookingsystem.db.entity.Client_hotel"/>
-
-         <mapping class="pl.bookingsystem.db.entity.Room>
-         <mapping class="pl.bookingsystem.db.entity.Additionn"/>
-         <mapping class="pl.bookingsystem.db.entity.Employee/>
-         <mapping class="pl.bookingsystem.db.entity.Status"/>
-         <mapping class="pl.bookingsystem.db.entity.System"/>-->
 
     </session-factory>
 </hibernate-configuration>

@@ -4,5 +4,12 @@ $(function () {
         var placement = $(this).data('placement');
         $(placement).load(url);
     });
+
+    var $contextElem = $('div[data-default]');
+    if ($contextElem.length) {
+        var contextId = $contextElem.attr('id');
+        var defaultContext = $contextElem.data('default');
+        $("#" + contextId).load(defaultContext);
+    }
 });
 

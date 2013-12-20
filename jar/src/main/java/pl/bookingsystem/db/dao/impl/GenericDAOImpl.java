@@ -78,9 +78,32 @@ public abstract class GenericDAOImpl<T, ID extends Serializable> implements Gene
     }
 
     @Override
+    public List<T> selectMany(String hql) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+        Query query = session.createQuery(hql);
+
+        List<T> t = (List<T>) query.list();
+        session.close();
+        return t;
+    }
+
+    @Override
     public T selectOne(Query query) {
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
+
+        T t = (T) query.uniqueResult();
+
+        session.close();
+        return t;
+    }
+
+    @Override
+    public T selectOne(String hql) {
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+        Query query = session.createQuery(hql);
 
         T t = (T) query.uniqueResult();
 
