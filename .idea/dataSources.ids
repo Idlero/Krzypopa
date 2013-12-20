@@ -20,12 +20,10 @@
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="description" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="Roomid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKAddition128534" columns="Roomid" ref-table="room" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="address" schema="" catalog="bookingsystem" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="city" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="street" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="building_no" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
@@ -33,50 +31,39 @@
       <column name="postcode" sqlType="VARCHAR" length="8" precision="0" nullable="false" jdbcType="12"/>
       <column name="country" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKAddress883560" columns="id" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKAddress614460" columns="id" ref-table="user" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FKClient879079" table="client" schema="" catalog="bookingsystem" columns="id"/>
     </table>
     <table name="client" schema="" catalog="bookingsystem" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="first_name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="last_name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="pesel" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="nip" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="phone_number" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
-      <column name="password" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="address_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="register_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="update_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKClient879079" columns="id" ref-table="address" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FKClient_Hot718968" table="client_hotel" schema="" catalog="bookingsystem" columns="Clientid"/>
-      <exported-key name="FKReservatio2740" table="reservation" schema="" catalog="bookingsystem" columns="Clientid"/>
-    </table>
-    <table name="client_hotel" schema="" catalog="bookingsystem" type="TABLE">
-      <column name="Clientid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="Hotelid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="Clientid,Hotelid"/>
-      <foreign-key name="FKClient_Hot718968" columns="Clientid" ref-table="client" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKClient_Hot294122" columns="Hotelid" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="hotel" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="description" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="phone_number" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
-      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="phone_number" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="address_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FKAddress883560" table="address" schema="" catalog="bookingsystem" columns="id"/>
-      <exported-key name="FKClient_Hot294122" table="client_hotel" schema="" catalog="bookingsystem" columns="Hotelid"/>
-      <exported-key name="FKHotel_User158707" table="hotel_user" schema="" catalog="bookingsystem" columns="Hotelid"/>
-      <exported-key name="FKRoom661465" table="room" schema="" catalog="bookingsystem" columns="Hotelid"/>
-      <index name="id" unique="false" columns="id"/>
+    </table>
+    <table name="hotel_client" schema="" catalog="bookingsystem" type="TABLE">
+      <column name="client_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="hotel_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="client_id,hotel_id"/>
     </table>
     <table name="hotel_user" schema="" catalog="bookingsystem" type="TABLE">
-      <column name="Hotelid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="Userid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="Hotelid,Userid"/>
-      <foreign-key name="FKHotel_User158707" columns="Hotelid" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKHotel_User858112" columns="Userid" ref-table="user" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <column name="hotel_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="hotel_id,user_id"/>
     </table>
     <table name="price" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
@@ -84,7 +71,6 @@
       <column name="person_type" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
       <column name="value" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FKRoom_Price14296" table="room_price" schema="" catalog="bookingsystem" columns="Priceid"/>
     </table>
     <table name="reservation" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
@@ -93,12 +79,11 @@
       <column name="date_to" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
       <column name="person_count" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="date_edit" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91"/>
-      <column name="Clientid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="Statusid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="client_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="status_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="entry_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="update_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKReservatio2740" columns="Clientid" ref-table="client" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKReservatio487354" columns="Statusid" ref-table="status" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FKRoom_Reser269207" table="room_reservation" schema="" catalog="bookingsystem" columns="Reservationid"/>
     </table>
     <table name="room" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
@@ -107,47 +92,43 @@
       <column name="description" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="bed" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12"/>
       <column name="capacity" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
-      <column name="Hotelid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="hotel_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKRoom661465" columns="Hotelid" ref-table="hotel" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FKAddition128534" table="addition" schema="" catalog="bookingsystem" columns="Roomid"/>
-      <exported-key name="FKRoom_Price109505" table="room_price" schema="" catalog="bookingsystem" columns="Roomid"/>
-      <exported-key name="FKRoom_Reser623976" table="room_reservation" schema="" catalog="bookingsystem" columns="Roomid"/>
+    </table>
+    <table name="room_addition" schema="" catalog="bookingsystem" type="TABLE">
+      <column name="room_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="addition_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
     </table>
     <table name="room_price" schema="" catalog="bookingsystem" type="TABLE">
-      <column name="Roomid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="Priceid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="Roomid,Priceid"/>
-      <foreign-key name="FKRoom_Price109505" columns="Roomid" ref-table="room" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKRoom_Price14296" columns="Priceid" ref-table="price" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <column name="room_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="price_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="room_id,price_id"/>
     </table>
     <table name="room_reservation" schema="" catalog="bookingsystem" type="TABLE">
-      <column name="Roomid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="Reservationid" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="Roomid,Reservationid"/>
-      <foreign-key name="FKRoom_Reser623976" columns="Roomid" ref-table="room" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKRoom_Reser269207" columns="Reservationid" ref-table="reservation" ref-schema="" ref-catalog="bookingsystem" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <column name="room_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="reservation_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="room_id,reservation_id"/>
     </table>
     <table name="status" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="type" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="status_type" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="description" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FKReservatio487354" table="reservation" schema="" catalog="bookingsystem" columns="Statusid"/>
     </table>
     <table name="user" schema="" catalog="bookingsystem" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="first_name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="last_name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="pesel" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="nip" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="nip" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="address_id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="phone_number" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
-      <column name="password" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
-      <column name="type" sqlType="ENUM" length="8" precision="0" nullable="true" jdbcType="1"/>
+      <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="user_type" sqlType="CHAR" length="8" precision="0" nullable="false" jdbcType="1" def="J0VNUExPWUVFJw=="/>
+      <column name="register_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="update_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FKAddress614460" table="address" schema="" catalog="bookingsystem" columns="id"/>
-      <exported-key name="FKHotel_User858112" table="hotel_user" schema="" catalog="bookingsystem" columns="Userid"/>
     </table>
   </data-source>
 </component>
