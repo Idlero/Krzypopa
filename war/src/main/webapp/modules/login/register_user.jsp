@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Logout</title>
-    <meta name="msapplication-TileColor" content="#5bc0de" />
-    <meta name="msapplication-TileImage" content="./assets/img/metis-tile.png" />
+    <meta name="msapplication-TileColor" content="#5bc0de"/>
+    <meta name="msapplication-TileImage" content="./assets/img/metis-tile.png"/>
     <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/lib/magic/magic.css">
-    <link rel="stylesheet" href="./assets/lib/Font-Awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./assets/lib/Font-Awesome/css/font-awesome.css"/>
 </head>
 <body class="error">
 <div class="container">
@@ -19,8 +19,10 @@
             <h1>Error!</h1>
         </div>
         <p class="lead text-muted">Incorrect email or password!</p>
+
         <div class="clearfix"></div>
         <br>
+
         <div class="col-lg-6  col-lg-offset-3">
             <div class="btn-group btn-group-justified">
                 <s:a action="login" cssClass="btn btn-info">

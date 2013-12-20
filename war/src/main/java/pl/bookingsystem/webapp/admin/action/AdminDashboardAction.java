@@ -2,7 +2,10 @@ package pl.bookingsystem.webapp.admin.action;
 
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.convention.annotation.*;
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.ResultPath;
 import org.apache.struts2.interceptor.ApplicationAware;
 import org.apache.struts2.interceptor.SessionAware;
 
@@ -20,7 +23,7 @@ public class AdminDashboardAction extends ActionSupport implements SessionAware,
     private Map<String, Object> application;
 
     @Action(value = "dashboard", results = {
-            @Result(name = "success", location = "/modules/admin/pages/dashboard.jsp")
+            @Result(name = "success", location = "/modules/admin/dashboard.jsp")
     })
     public String execute() {
         setUsername((String) session.get("username")); //retrieve username from session context
@@ -28,12 +31,14 @@ public class AdminDashboardAction extends ActionSupport implements SessionAware,
         return SUCCESS;
     }
 
+    //TODO: blad?
+/*
     @Action(value = "settings", results = {
             @Result(name = "success", location = "/modules/admin/pages/settings.jsp")
     })
     public String goToSettings() {
         return SUCCESS;
-    }
+    }*/
 
     @Override
     public void setSession(Map<String, Object> session) {

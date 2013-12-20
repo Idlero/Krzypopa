@@ -23,7 +23,7 @@ public class AdminSettingsAction extends ActionSupport implements ApplicationAwa
     private String newPassword;
 
     @Action(value = "dashboard", results = {
-            @Result(name = "success", location = "/modules/admin/pages/dashboard.jsp")
+            @Result(name = "success", location = "/modules/admin/dashboard.jsp")
     })
     public String change() {
         if (oldPassword.equals(application.get("password"))) {

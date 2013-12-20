@@ -1,12 +1,14 @@
 package pl.bookingsystem.webapp.login.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.convention.annotation.*;
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.ResultPath;
 import org.apache.struts2.interceptor.ApplicationAware;
 import org.apache.struts2.interceptor.SessionAware;
 import pl.bookingsystem.db.dao.UserDAO;
 import pl.bookingsystem.db.dao.impl.UserDAOImpl;
-import pl.bookingsystem.db.entity.Address;
 import pl.bookingsystem.db.entity.User;
 
 import java.util.Map;
@@ -23,9 +25,9 @@ public class LoginAction extends ActionSupport implements SessionAware, Applicat
     private Map<String, Object> session;
 
     @Action(value = "dashboard", results = {
-            @Result(name = "userlogged", location = "/modules/user/pages/dashboard.jsp"),
-            @Result(name = "adminlogged", location = "/modules/admin/pages/dashboard.jsp"),
-            @Result(name = "error", location = "/modules/login/pages/register_user.jsp")  //TODO: incorrect user or pass moze byc wyswietlany na tej samej stronie
+            @Result(name = "userlogged", location = "/modules/user/dashboard.jsp"),
+            @Result(name = "adminlogged", location = "/modules/admin/dashboard.jsp"),
+            @Result(name = "error", location = "/modules/login/register_user.jsp")  //TODO: incorrect user or pass moze byc wyswietlany na tej samej stronie
     })
     public String execute() {
 
@@ -44,7 +46,7 @@ public class LoginAction extends ActionSupport implements SessionAware, Applicat
 
 
     @Action(value = "logout", results = {
-            @Result(name = "success", location = "/modules/login/pages/logout.jsp")
+            @Result(name = "success", location = "/modules/login/logout.jsp")
     })
     public String logout() {
         setUsername("");
@@ -56,7 +58,7 @@ public class LoginAction extends ActionSupport implements SessionAware, Applicat
     }
 
     @Action(value = "login", results = {
-            @Result(name = "success", location = "/modules/login/pages/login.jsp")
+            @Result(name = "success", location = "/modules/login/login.jsp")
     })
     public String goToLogin() {
         return SUCCESS;
