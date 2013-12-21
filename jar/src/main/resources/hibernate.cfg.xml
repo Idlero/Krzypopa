@@ -6,7 +6,7 @@
 <hibernate-configuration>
 
     <session-factory>
-        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <!--<property name="hibernate.bytecode.use_reflection_optimizer">false</property>-->
 
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
@@ -15,13 +15,13 @@
         <property name="hibernate.connection.password">root</property>
 
         <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">1</property>
+        <!--<property name="connection.pool_size">1</property>-->
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Enable Hibernate's automatic session context management -->
-        <property name="current_session_context_class">thread</property>
+        <!--<property name="current_session_context_class">thread</property>-->
 
 
         <!-- Echo all executed SQL to stdout -->
@@ -29,7 +29,7 @@
         <!--<property name="format_sql">true</property>-->
         <property name="use_sql_comments">false</property>
 
-        <property name="hbm2ddl.auto">validate</property>
+        <!--<property name="hbm2ddl.auto">validate</property>-->
 
         <!-- Disable the second-level cache  -->
         <!--<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>-->
