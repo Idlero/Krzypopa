@@ -27,7 +27,6 @@
 
     <!--Modernizr 3.0-->
     <script src="./assets/lib/modernizr-build.min.js"></script>
-    <sj:head/>
 </head>
 <body>
 <div id="wrap">
@@ -110,7 +109,9 @@
 
             <form class="main-search">
                 <div class="input-group">
-                    <input type="text" class="input-small form-control" placeholder="Live Search ...">
+                    <label>
+                        <input type="text" class="input-small form-control" placeholder="Live Search ...">
+                    </label>
                 <span class="input-group-btn">
                                     <button class="btn btn-primary btn-sm text-muted" type="button"><i
                                             class="fa fa-search"></i></button>
@@ -159,7 +160,7 @@
             </ul>
         </li>
         <li class="">
-            <a href="javascript:;">
+            <a href="#">
                 <i class="fa fa-users"></i>&nbsp;Clients
                 <span class="fa arrow"></span>
             </a>

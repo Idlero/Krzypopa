@@ -8,7 +8,11 @@ import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.ResultPath;
 import org.apache.struts2.interceptor.ApplicationAware;
 import org.apache.struts2.interceptor.SessionAware;
+import pl.bookingsystem.db.entity.Reservation;
+import pl.bookingsystem.db.entity.User;
 
+import java.io.InputStream;
+import java.util.List;
 import java.util.Map;
 
 
@@ -30,6 +34,7 @@ public class AdminDashboardAction extends ActionSupport implements SessionAware,
         setPassword((String) application.get("password"));
         return SUCCESS;
     }
+
 
     //TODO: blad?
 /*

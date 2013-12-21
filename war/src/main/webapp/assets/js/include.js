@@ -11,5 +11,24 @@ $(function () {
         var defaultContext = $contextElem.data('default');
         $("#" + contextId).load(defaultContext);
     }
+
+
 });
 
+function ajaxSubmit(formId, outputId) {
+    var $form = $(formId);
+
+    $.ajax({
+        type: 'POST',
+        url: $form.attr('action'),
+        data: {data: $form.serialize()},
+        dataType: 'json',
+        success: function (data) {
+           // if(data.result == "ok")
+            console.log("Success: ", JSON.stringify(data));
+//            $(outputId).text(data);
+        },
+        error: function (data) {
+            console.log("Error: ", JSON.stringify(data));
+        }});
+}

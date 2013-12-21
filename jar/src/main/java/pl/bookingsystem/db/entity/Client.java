@@ -157,6 +157,10 @@ public class Client implements Serializable {
         this.address = address;
     }
 
+    public void setAddress(String city, String street, String building_no, String apartment_no, String postcode, String country){
+        this.address = new Address(city, street, Integer.valueOf(building_no), Integer.valueOf(apartment_no), postcode, country);
+    }
+
  /*   public Set<Reservation> getReservations() {
         return reservations;
     }
